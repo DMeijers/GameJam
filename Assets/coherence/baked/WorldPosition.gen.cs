@@ -73,6 +73,18 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeCube_6344a489f82917c4fa01c2adf8b0afd1_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
 
 		/// <summary>
 		/// Resets byte array references to the local array instance that is kept in the lastSentData.
