@@ -50,7 +50,9 @@ void Update()
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform;
                     Debug.Log("Object spawned on nearest target!");
-                }
+                    
+                    
+                    }
 
                 holdStartTime = 0;
             }
