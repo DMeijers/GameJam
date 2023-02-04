@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     private Vector3 moveDir;
     public Animator animator;
+    internal object body;
 
 
     // Start is called before the first frame update
