@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectSpawner : MonoBehaviour
 {
@@ -15,8 +16,13 @@ private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
 
+public int objectCounter = 0;
+
+public Image image;
+
 void Update()
 {
+    Debug.Log(objectCounter);
     if (Input.GetKey(KeyCode.E))
     {
         if (holdStartTime == 0)
@@ -58,11 +64,14 @@ void Update()
                     Quaternion spawnRotation = transform.rotation;
 
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
-                    spawnedObject.transform.parent = nearestTarget.transform; 
-                    
+                    spawnedObject.transform.parent = nearestTarget.transform;
+                        image.fillAmount -= 0.2f;
+                    objectCounter++;
                     nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
                     Debug.Log("Object spawned on nearest target!");
-                }
+                    
+                    
+                    }
 
                 holdStartTime = 0;
             }
