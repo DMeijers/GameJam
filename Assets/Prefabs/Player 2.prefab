@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2458065483698364635}
   - component: {fileID: 2933440642516411275}
   - component: {fileID: 3339001113644909947}
+  - component: {fileID: 7395971371247302863}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -115,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  animator: {fileID: 0}
+  animator: {fileID: 7395971371247302863}
 --- !u!114 &2458065483698364635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +218,8 @@ MonoBehaviour:
     - component: {fileID: 2350106293307796104}
       lodStepsActive: 1
     - component: {fileID: 8032382007217502459}
+      lodStepsActive: 1
+    - component: {fileID: 7395971371247302863}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -419,6 +422,26 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 4438379334096457343}
+--- !u!95 &7395971371247302863
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002353391504816594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8549511878343277733
 GameObject:
   m_ObjectHideFlags: 0
