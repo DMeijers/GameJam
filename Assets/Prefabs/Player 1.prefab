@@ -685,8 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectArray: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
-  targetTag: trap
-  height: 1
+  targetTag: target
+  height: 0
   holdDuration: 5
   spawnRadius: 1
-  specificObjects: []

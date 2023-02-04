@@ -28,7 +28,7 @@ public class TrapPlacer : MonoBehaviour
     public float height = 1.0f;
     public float holdDuration = 5.0f;
     public float spawnRadius = 1.0f;
-    public GameObject[] specificObjects;
+    
 
     private GameObject nearestTarget;
     private float distance;
@@ -72,14 +72,16 @@ public class TrapPlacer : MonoBehaviour
                         }
 
                         int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array*/
+                    if (nearestTarget != null && distance <= spawnRadius)
+                    {
                         GameObject objectToSpawn = objectArray;
                         Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
                         Quaternion spawnRotation = transform.rotation;
 
-                       GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
-                       spawnedObject.transform.parent = nearestTarget.transform;
+                        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+                        spawnedObject.transform.parent = nearestTarget.transform;
 
-
+                    }
                     holdStartTime = 0;
                 }
             }
