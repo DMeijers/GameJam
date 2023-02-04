@@ -69,7 +69,9 @@ void Update()
                     objectCounter++;
                     nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
                     Debug.Log("Object spawned on nearest target!");
-                }
+                    
+                    
+                    }
 
                 holdStartTime = 0;
             }
