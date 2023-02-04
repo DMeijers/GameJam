@@ -8,8 +8,18 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private Sound[] _sounds;
 
+    public static AudioManager Instance;
+
     private void Awake()
     {
+        if(Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+
+        Instance = this;
+
         DontDestroyOnLoad(gameObject);
 
         foreach(var sound in _sounds)
