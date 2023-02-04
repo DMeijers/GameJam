@@ -15,8 +15,11 @@ private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
 
+public int objectCounter = 0;
+
 void Update()
 {
+    Debug.Log(objectCounter);
     if (Input.GetKey(KeyCode.E))
     {
         if (holdStartTime == 0)
@@ -59,7 +62,7 @@ void Update()
 
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform; 
-                    
+                    objectCounter++;
                     nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
                     Debug.Log("Object spawned on nearest target!");
                 }
