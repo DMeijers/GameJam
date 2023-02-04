@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 138527674}
   - component: {fileID: 138527673}
   - component: {fileID: 138527672}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1849015920}
   - component: {fileID: 1849015919}
   - component: {fileID: 1849015918}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2476,7 +2476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 138527672}
-  waitTime: 30
+  waitTime: 120
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0
