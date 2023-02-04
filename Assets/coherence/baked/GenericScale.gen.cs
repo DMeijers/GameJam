@@ -73,30 +73,6 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypePlayer__char_32_1_555d1695bf1878941bdcea6e7bdd0b10_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypePlayer__char_32_2_75f6611ace5a6a74daa3ea8e6a775feb_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
 
 		/// <summary>
 		/// Resets byte array references to the local array instance that is kept in the lastSentData.
