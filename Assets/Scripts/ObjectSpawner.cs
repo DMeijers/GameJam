@@ -28,7 +28,8 @@ void Update()
         if (holdStartTime == 0)
         {
             holdStartTime = Time.time;
-        }
+            AudioManager.Instance.play("spawning_1");
+            }
         else
         {
             float timeHeld = Time.time - holdStartTime;
@@ -44,6 +45,7 @@ void Update()
                     {
                         distance = currentDistance;
                         nearestTarget = target;
+                        
                     }
                 }
 
