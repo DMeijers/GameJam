@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectSpawnerHuman : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public float spawnRadius = 1.0f;
 private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
+
+public Image image;
 
 void Update()
 {
@@ -49,7 +52,8 @@ void Update()
 
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform;
-                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
+                        image.fillAmount -= 0.2f;
+                        nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
                     Debug.Log("Object spawned on nearest target!");
                 }
 
