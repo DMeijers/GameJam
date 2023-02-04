@@ -18582,6 +18582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HexelPlanet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b7fce2e61638b4468b31ea834c25e77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 937548093241358411, guid: 2b7fce2e61638b4468b31ea834c25e77, type: 3}
       propertyPath: m_TagString
       value: target
@@ -34105,7 +34109,7 @@ PrefabInstance:
     - target: {fileID: -5608303008051690881, guid: fe24f963e5f44e143ae9fb83a070f80f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d026a0db83d492e48ae2932caf98ff80, type: 2}
+      objectReference: {fileID: 2100000, guid: 56de8b50938fc934b96dea42f6237ac0, type: 2}
     - target: {fileID: -2320466379727905092, guid: fe24f963e5f44e143ae9fb83a070f80f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -34113,6 +34117,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe24f963e5f44e143ae9fb83a070f80f, type: 3}
       propertyPath: m_Name
       value: PlanetExample
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe24f963e5f44e143ae9fb83a070f80f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe24f963e5f44e143ae9fb83a070f80f, type: 3}
@@ -39416,6 +39424,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3189353916146716020, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
+--- !u!1001 &2105107325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471140216846839113, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+      propertyPath: m_Name
+      value: HexagonPlanetLast
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
 --- !u!1 &2105157620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1867752981348547299, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
@@ -42789,6 +42854,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
       propertyPath: m_Name
       value: PlanetIndividualOrigins
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 923471089597304555, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
       propertyPath: m_TagString

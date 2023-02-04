@@ -2021,7 +2021,7 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id7, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   remoteVersionPrefabName: PlayerTree
   PrefabGuid: 6e41740ccd468754ebce2e5459d93cdd
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 0
+  usingReflection: 1
   coherenceTag: 
   componentActions:
   - rid: 6612970994863964168
@@ -2057,6 +2057,7 @@ MonoBehaviour:
   - rid: 6612970994863964170
   - rid: 6612970994863964171
   - rid: 6612970998813687812
+  - rid: 6612971008980418561
   references:
     version: 2
     RefIds:
@@ -2222,6 +2223,10 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 2269046520460430652}
+    - rid: 6612971008980418561
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 5624696503662188214}
 --- !u!114 &2269046520460430652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,6 +2248,7 @@ MonoBehaviour:
   height: 0
   holdDuration: 1
   spawnRadius: 1
+  specificObjects: []
 --- !u!95 &5624696503662188214
 Animator:
   serializedVersion: 4
