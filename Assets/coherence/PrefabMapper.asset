@@ -16,3 +16,4 @@ MonoBehaviour:
   prefabMappings:
   - prefab: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
   - prefab: {fileID: 3002353391504816594, guid: 75f6611ace5a6a74daa3ea8e6a775feb, type: 3}
+  - prefab: {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}
