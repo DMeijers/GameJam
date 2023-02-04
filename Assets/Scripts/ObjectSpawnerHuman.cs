@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectSpawner : MonoBehaviour
+public class ObjectSpawnerHuman : MonoBehaviour
 {
-public GameObject[] objectArray; // array of prefab objects
+   public GameObject[] objectArray; // array of prefab objects
 public string targetTag = "Target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;

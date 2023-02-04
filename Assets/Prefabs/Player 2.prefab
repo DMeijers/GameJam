@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2458065483698364635}
   - component: {fileID: 2933440642516411275}
   - component: {fileID: 3339001113644909947}
-  - component: {fileID: 5709397024854257982}
+  - component: {fileID: 778897208074614293}
   - component: {fileID: 7395971371247302863}
   m_Layer: 0
   m_Name: Player 2
@@ -222,14 +222,14 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 7395971371247302863}
       lodStepsActive: 1
-    - component: {fileID: 5709397024854257982}
+    - component: {fileID: 778897208074614293}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_2_75f6611ace5a6a74daa3ea8e6a775feb
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2_id1, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2_id2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -264,16 +264,12 @@ MonoBehaviour:
   - rid: 6612970994863964169
   - rid: 6612970994863964170
   - rid: 6612970994863964171
-  - rid: 5413662195583549441
+  - rid: 6612970998813687813
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 5413662195583549441
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 5709397024854257982}
     - rid: 6612970994863964162
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -430,7 +426,11 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 4438379334096457343}
---- !u!114 &5709397024854257982
+    - rid: 6612970998813687813
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 778897208074614293}
+--- !u!114 &778897208074614293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,10 +439,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3002353391504816594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d65bb48d7c45c42b843555230773ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 402559b88bc9ac34db17afdded13e121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 181711312682522833, guid: 3bcf20e841cfdc74388cde29fa1de9ba, type: 3}
+  objectArray:
+  - {fileID: 1656871623476923497, guid: 740dc65917c8b324eb303a2698f2dd1a, type: 3}
+  - {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}
+  - {fileID: 5200870057625207877, guid: 8fbce83bfa2ab394197ba0c36dd48c6e, type: 3}
   targetTag: target
   height: 0
   holdDuration: 3

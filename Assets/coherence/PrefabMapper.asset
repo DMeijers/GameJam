@@ -15,4 +15,11 @@ MonoBehaviour:
   hasGuidIssue: 0
   prefabMappings:
   - prefab: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
+  - prefab: {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}
   - prefab: {fileID: 3002353391504816594, guid: 75f6611ace5a6a74daa3ea8e6a775feb, type: 3}
+  - prefab: {fileID: 1656871623476923497, guid: 740dc65917c8b324eb303a2698f2dd1a, type: 3}
+  - prefab: {fileID: 5200870057625207877, guid: 8fbce83bfa2ab394197ba0c36dd48c6e, type: 3}
+  - prefab: {fileID: 5721288860690657815, guid: dcbe017ddb668d24fbbd84607bebbc08, type: 3}
+  - prefab: {fileID: 5441883195881441670, guid: 6deeb2c1af05aa8418d68271a04a30d0, type: 3}
+  - prefab: {fileID: 7660035879219782382, guid: aeb6565d66e84134a8bed68b9c23a88c, type: 3}
+  - prefab: {fileID: 181711312682522833, guid: 3bcf20e841cfdc74388cde29fa1de9ba, type: 3}
