@@ -1371,7 +1371,6 @@ GameObject:
   - component: {fileID: 4973816531230417904}
   - component: {fileID: 5819893876217580149}
   - component: {fileID: 3265500078521850289}
-  - component: {fileID: 744735851}
   m_Layer: 0
   m_Name: PlayerHuman
   m_TagString: Player
@@ -1670,8 +1669,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 3265500078521850289}
       lodStepsActive: 1
-    - component: {fileID: 744735851}
-      lodStepsActive: 1
     - component: {fileID: 969274068}
       lodStepsActive: 1
     - component: {fileID: 969274071}
@@ -1938,20 +1935,7 @@ MonoBehaviour:
   height: 0
   holdDuration: 1
   spawnRadius: 1
---- !u!114 &744735851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4826320148041391961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab7191d2ef80e3847a5aea32a275d3cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  waitTime: 30
+  image: {fileID: 2144847745}
 --- !u!1 &4849199821944160738
 GameObject:
   m_ObjectHideFlags: 0

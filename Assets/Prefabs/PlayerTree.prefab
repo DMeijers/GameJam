@@ -1846,7 +1846,6 @@ GameObject:
   - component: {fileID: 6614678196765163315}
   - component: {fileID: 2269046520460430652}
   - component: {fileID: 5624696503662188214}
-  - component: {fileID: 1260502699}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -2195,8 +2194,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 6660611207584541855}
       lodStepsActive: 1
-    - component: {fileID: 1260502699}
-      lodStepsActive: 1
     - component: {fileID: 1849015917}
       lodStepsActive: 1
     - component: {fileID: 1849015920}
@@ -2438,11 +2435,12 @@ MonoBehaviour:
   - {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
   - {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
   targetTag: target
-  height: 0
+  height: 0.01
   holdDuration: 1
   spawnRadius: 1
   specificObjects: []
   objectCounter: 0
+  image: {fileID: 138527672}
 --- !u!95 &5624696503662188214
 Animator:
   serializedVersion: 4
@@ -2463,20 +2461,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1260502699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6642824383705400218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab7191d2ef80e3847a5aea32a275d3cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 138527672}
-  waitTime: 120
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0
