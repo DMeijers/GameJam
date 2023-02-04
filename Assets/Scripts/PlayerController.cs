@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical")).normalized;
-        
+        moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("IsMoving", true);
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             animator.SetBool("IsMoving", false);
-          
+
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         else
         {
 
-         animator.SetBool("GoingLeft", false);
+            animator.SetBool("GoingLeft", false);
 
         }
 
@@ -65,6 +65,17 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    //void connect(){
+    //AudioManager.Instance.Play("") // need to add soundtrack before uncomment
+    //}
+
+    //void disconnect(){
+    //AudioManager.Instance.Stop("") // need to add soundtrack before uncomment
+    //}
+
+    //Player needs Playertag pls
+
 
     void FixedUpdate(){
         GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveDir) * speed * Time.deltaTime);
