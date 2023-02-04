@@ -49,6 +49,7 @@ void Update()
 
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform;
+                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
                     Debug.Log("Object spawned on nearest target!");
                 }
 
@@ -60,5 +61,12 @@ void Update()
     {
         holdStartTime = 0;
     }
+}
+private Color HexToColor(string hex)
+{
+    byte r = byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
+    byte g = byte.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
+    byte b = byte.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
+    return new Color32(r, g, b, 255);
 }
 }
