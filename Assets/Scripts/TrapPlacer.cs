@@ -16,7 +16,7 @@ public class TrapPlacer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("F"))
+        if (Input.GetKey(KeyCode.F))
         {
             Instantiate(Trap, myposition.transform.position, myposition.transform.rotation);
         }
