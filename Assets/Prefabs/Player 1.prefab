@@ -425,7 +425,9 @@ MonoBehaviour:
     archetypeName: Player__char_32_1_555d1695bf1878941bdcea6e7bdd0b10
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id0, Assembly-CSharp
+
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id9, Assembly-CSharp
+
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -453,7 +455,7 @@ MonoBehaviour:
   remoteVersionPrefabName: Player 1
   PrefabGuid: 555d1695bf1878941bdcea6e7bdd0b10
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 0
+  usingReflection: 1
   coherenceTag: 
   componentActions:
   - rid: 6612970994863964168
@@ -647,6 +649,8 @@ MonoBehaviour:
   height: 0
   holdDuration: 3
   spawnRadius: 1
+  specificObjects: []
+  objectCounter: 0
 --- !u!95 &8187884921552414786
 Animator:
   serializedVersion: 4
