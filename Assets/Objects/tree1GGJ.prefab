@@ -509,6 +509,8 @@ GameObject:
   - component: {fileID: 4912804094309951661}
   - component: {fileID: 1619761537118934860}
   - component: {fileID: 208065938587605155}
+  - component: {fileID: 2011898061188684430}
+  - component: {fileID: 5188315743916383711}
   m_Layer: 0
   m_Name: tree1GGJ
   m_TagString: Untagged
@@ -636,6 +638,10 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 6100800461200242380}
       lodStepsActive: 1
+    - component: {fileID: 2011898061188684430}
+      lodStepsActive: 1
+    - component: {fileID: 5188315743916383711}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: tree1GGJ_dcbe017ddb668d24fbbd84607bebbc08
@@ -647,7 +653,7 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 1
   lifetimeType: 1
-  uniquenessType: 1
+  uniquenessType: 0
   coherenceUUID: 137fe99e-20ee-41a1-a7b6-9330d8992f1d
   destructionBehavior: 0
   preserveChildren: 0
@@ -781,6 +787,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoAssignOnSceneInstances: 1
+--- !u!111 &2011898061188684430
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5721288860690657815}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a3eef79ff57a1d140bdd83f577e28ed2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a3eef79ff57a1d140bdd83f577e28ed2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &5188315743916383711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5721288860690657815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd085c83ac7af9408c110f1d55033d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8151053184389579078
 GameObject:
   m_ObjectHideFlags: 0

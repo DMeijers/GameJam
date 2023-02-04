@@ -153,7 +153,7 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 1
   lifetimeType: 1
-  uniquenessType: 1
+  uniquenessType: 0
   coherenceUUID: d8dedce0-d8bc-49df-bcf6-5f9f8af1f531
   destructionBehavior: 0
   preserveChildren: 0
