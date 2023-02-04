@@ -23,8 +23,7 @@ void Start()
     
 }
 
-void Update()
-{
+
     
     void DetermineWinner()
      {
