@@ -2213,7 +2213,7 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id7, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id9, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2250,6 +2250,9 @@ MonoBehaviour:
   - rid: 6612970994863964171
   - rid: 6612970998813687812
   - rid: 6612971008980418561
+  - rid: 6612971014532890628
+  - rid: 6612971014532890629
+  - rid: 6612971014532890630
   references:
     version: 2
     RefIds:
@@ -2419,6 +2422,18 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 5624696503662188214}
+    - rid: 6612971014532890628
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 1849015920}
+    - rid: 6612971014532890629
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 1849015919}
+    - rid: 6612971014532890630
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 1849015918}
 --- !u!114 &2269046520460430652
 MonoBehaviour:
   m_ObjectHideFlags: 0

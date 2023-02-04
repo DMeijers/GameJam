@@ -1688,7 +1688,7 @@ MonoBehaviour:
     archetypeName: PlayerHuman_6d57491473fb68a4a87f6eca2180c0d4
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id8, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -1725,6 +1725,9 @@ MonoBehaviour:
   - rid: 6612970994863964171
   - rid: 6612971008980418560
   - rid: 6612971008980418562
+  - rid: 6612971014532890631
+  - rid: 6612971014532890632
+  - rid: 6612971014532890633
   references:
     version: 2
     RefIds:
@@ -1894,6 +1897,18 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 5819893876217580149}
+    - rid: 6612971014532890631
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 969274071}
+    - rid: 6612971014532890632
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 969274070}
+    - rid: 6612971014532890633
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 969274069}
 --- !u!95 &5819893876217580149
 Animator:
   serializedVersion: 4
@@ -1932,7 +1947,7 @@ MonoBehaviour:
   - {fileID: 1142328404444112295, guid: 7a150e548341e554686c3ad454e4222c, type: 3}
   - {fileID: 3576073398359058134, guid: e19425375427f9b488aa3730f7396c91, type: 3}
   targetTag: target
-  height: 0
+  height: 0.01
   holdDuration: 1
   spawnRadius: 1
   image: {fileID: 2144847745}

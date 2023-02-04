@@ -129,7 +129,7 @@ MonoBehaviour:
     archetypeName: tree_GGJ_3bcf20e841cfdc74388cde29fa1de9ba
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSynctree_GGJ_id6, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSynctree_GGJ_id8, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
