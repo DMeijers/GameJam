@@ -23,8 +23,8 @@ public class ResourceBar : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-            DecreaseResources();
-        else if (resources != maxResources)
+            DecreaseResources();            // add value? how much does it decrease for every use? 
+        else if (resources != maxResources) //change to "when resource is collected", should not refill automatically
             IncreaseResources();
 
         resourceBar.value = resources;
