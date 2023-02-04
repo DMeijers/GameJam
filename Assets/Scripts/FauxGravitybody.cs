@@ -14,6 +14,7 @@ public class FauxGravitybody : MonoBehaviour
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
         GetComponent<Rigidbody>().useGravity = false;
         myTransform = transform;
+        attractor = GameObject.FindObjectOfType<FauxGravityAttractor>();
     }
 
     // Update is called once per frame
