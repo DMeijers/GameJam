@@ -20513,7 +20513,7 @@ MonoBehaviour:
     archetypeName: HexagonPlanetLast_9d078e07b9399aa4cb032287e7e9a327
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncHexagonPlanetLast_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncHexagonPlanetLast_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

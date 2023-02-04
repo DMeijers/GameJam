@@ -2021,7 +2021,7 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id7, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2240,7 +2240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectArray:
-  - {fileID: 1535082561849634811, guid: febf4ab0af82fbf4fa632e0b0bb92f7b, type: 3}
   - {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
   - {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
   targetTag: target
@@ -2248,6 +2247,7 @@ MonoBehaviour:
   holdDuration: 1
   spawnRadius: 1
   specificObjects: []
+  objectCounter: 0
 --- !u!95 &5624696503662188214
 Animator:
   serializedVersion: 4
