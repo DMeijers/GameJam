@@ -15321,6 +15321,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -10
+--- !u!114 &117079997370993406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5471140216846839113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoAssignOnSceneInstances: 1
 --- !u!114 &7304801107637218243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20513,14 +20526,14 @@ MonoBehaviour:
     archetypeName: HexagonPlanetLast_9d078e07b9399aa4cb032287e7e9a327
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncHexagonPlanetLast_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncHexagonPlanetLast_id12, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 1
   lifetimeType: 1
-  uniquenessType: 0
-  coherenceUUID: 
+  uniquenessType: 1
+  coherenceUUID: 549154f9-59ae-467c-9951-2e230aaa22d4
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []

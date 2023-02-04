@@ -6,6 +6,7 @@ TagManager:
   tags:
   - targetTag
   - target
+  - trap
   layers:
   - Default
   - TransparentFX

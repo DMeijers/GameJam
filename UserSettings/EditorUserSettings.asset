@@ -23,6 +23,9 @@ EditorUserSettings:
     Coherence.Package.LastInstallation:
       value: 531f05564b0d
       flags: 0
+    Coherence.Settings.ActiveSchemas.Hash:
+      value: 0100065203065a0b55565f20407b0613471640737a7a24697b2b4f30b7b96d61
+      flags: 0
     Coherence.Settings.Email:
       value: 025559030c5f0c491e2e042d042e5e191a591626
       flags: 0
@@ -30,19 +33,25 @@ EditorUserSettings:
       value: 0057510c0e435c59025f043415305c431105107a
       flags: 0
     Coherence.Settings.UserLoginEncryptedToken:
-      value: 514b1f5f4a7e387e2c5a1c2127094d421f3e3e653d192e3c02232465e0f02515e7b620cee03b3b32160ef9380e2e1212a1120759fe26003e230ac70d34d3022117920ce73bea3e3afc2a28d6de17e4f2d7d5c7bfdefbd7dd918da4aad9e5fbb7dda0aae8f2bcccfaac96e69c96cad5c1e2f2b4cb9fe9d8ff9f808382efe3f5f0fbe4a4e6d1abc2ffd5c2898694b782a5b4a7808ebfb1b4e4b1abb29868a3a56762443d9fedbc97898def5ad62a69dd857b38ac4361a089809883789c8db9a6997acdc89142b8aace57861c9075796237525b5f4c52693231
+      value: 
       flags: 0
     RecentlyUsedSceneGuid-0:
-      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
+      value: 5252045f5d545b595a5a08714877094445154c782f7f7460287e4e65b3e46260
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 0004035e540d0f5a59585e7243745c44474f1d7d7d7170647e7d1861b3b5306a
+      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 0107065e0401500f545c592748715d44404f4b2f7f2971687b7d1830b1b4673d
+      value: 5252045f5d545b595a5a08714877094445154c782f7f7460287e4e65b3e46260
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 0005055307575e035a5a0d2013225e444f4e4b2b7d7d756275794f6ab4b5606e
+      value: 5a060c025657080e5c5b0d764870094440154929282d76367c7f4465b6b26d3b
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 5709065356535e0f0c0a5d7213745b44444e4f7d797b7f3275284561b3b4676e
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 530957565c045809095e0d744726064443161a73297b75687a2f1930bbe3676a
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
