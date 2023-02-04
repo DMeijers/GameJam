@@ -1669,6 +1669,7 @@ GameObject:
   - component: {fileID: 6614678196765163315}
   - component: {fileID: 2269046520460430652}
   - component: {fileID: 5624696503662188214}
+  - component: {fileID: 7603324382914712863}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -2016,6 +2017,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 6660611207584541855}
       lodStepsActive: 1
+    - component: {fileID: 7603324382914712863}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
@@ -2264,6 +2267,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7603324382914712863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642824383705400218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabf36e8042b5480db9c99debb61c25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trap: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0
