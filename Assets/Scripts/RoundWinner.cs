@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoundWinner : MonoBehaviour
 {
     public int player1Score = 0;
     public int player2Score = 0;
     public float timer = 240.0f;
+    public Text resultText;
 
     void Start()
     {
@@ -24,15 +26,15 @@ public class RoundWinner : MonoBehaviour
 
         if (player1Score > player2Score)
         {
-            Debug.Log("Player 1 wins");
+            resultText.text = "Player 1 Wins!";
         }
         else if (player1Score < player2Score)
         {
-            Debug.Log("Player 2 wins");
+            resultText.text = "Player 2 Wins!";
         }
         else
         {
-            Debug.Log("It's a tie");
+            resultText.text = "It's a Tie!";
         }
     }
 }
