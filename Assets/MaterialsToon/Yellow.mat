@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Brown light
+  m_Name: Yellow
   m_Shader: {fileID: 4800000, guid: 20546008494bd044c919c05430bdfe75, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -74,10 +74,10 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Strength: 0.5
+    - _Strength: 0.618
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8301887, g: 0.30401275, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.8925928, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
