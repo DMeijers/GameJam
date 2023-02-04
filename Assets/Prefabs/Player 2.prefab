@@ -227,9 +227,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_2_75f6611ace5a6a74daa3ea8e6a775feb
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2_id1, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2_id2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -264,21 +264,12 @@ MonoBehaviour:
   - rid: 6612970994863964169
   - rid: 6612970994863964170
   - rid: 6612970994863964171
-  - rid: 5413662195583549441
-  - rid: 5413662195583549451
+  - rid: 6612970998813687813
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 5413662195583549441
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 0}
-    - rid: 5413662195583549451
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 778897208074614293}
     - rid: 6612970994863964162
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -435,6 +426,10 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 4438379334096457343}
+    - rid: 6612970998813687813
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 778897208074614293}
 --- !u!114 &778897208074614293
 MonoBehaviour:
   m_ObjectHideFlags: 0

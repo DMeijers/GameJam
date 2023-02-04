@@ -460,16 +460,12 @@ MonoBehaviour:
   - rid: 6612970994863964169
   - rid: 6612970994863964170
   - rid: 6612970994863964171
-  - rid: 5413662195583549450
+  - rid: 6612970998813687812
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 5413662195583549450
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: -6858243812009741368}
     - rid: 6612970994863964162
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -626,6 +622,10 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 8623580981150223043}
+    - rid: 6612970998813687812
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: -6858243812009741368}
 --- !u!114 &-6858243812009741368
 MonoBehaviour:
   m_ObjectHideFlags: 0

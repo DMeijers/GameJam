@@ -144,16 +144,16 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: GreyboxBuilding2_32d6247132758a74088777106e059e9d
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncGreyboxBuilding2_id2, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncGreyboxBuilding2_id1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 1
   lifetimeType: 1
   uniquenessType: 1
-  coherenceUUID: a3c188b3-73f4-464f-af64-62a277ea2393
+  coherenceUUID: ecf7145e-e767-4531-8bab-993ea63eebc1
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -161,7 +161,6 @@ MonoBehaviour:
   bindings:
   - rid: 5413662195583549444
   - rid: 5413662195583549446
-  - rid: 5413662195583549448
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -271,52 +270,6 @@ MonoBehaviour:
           rid: -2
         bindingType:
           assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.RotationBinding,
-            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        oldName: 
-        oldParameterAssemblyTypes: []
-    - rid: 5413662195583549448
-      type: {class: ScaleBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
-      data:
-        descriptor:
-          rid: 5413662195583549449
-        routing: 0
-        isPredicted: 0
-        defaultInterpolationPath: 
-        guid: d2cc21c7-e7c2-430f-b965-e17e796582d6
-        archetypeData:
-          type: 7
-          minRange: 0
-          maxRange: 0
-          sampleRate: 20
-          floatCompression: 0
-          fields:
-          - type: 7
-            bits: 32
-            minRange: 0
-            maxRange: 0
-            precision: 0.001
-            floatCompression: 0
-          sharedBinding: {fileID: 0}
-        unityComponent: {fileID: 7232707901172969009}
-        coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 5413662195583549449
-      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
-      data:
-        name: localScale
-        monoAssemblyType: UnityEngine.Vector3, UnityEngine
-        required: 0
-        enforcesLODingWhenFieldsOverriden: 1
-        valueSyncCallbackName: 
-        memberType: 64
-        parameterAssemblyTypes: []
-        ownerType:
-          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        CustomData:
-          rid: -2
-        bindingType:
-          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.ScaleBinding,
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
