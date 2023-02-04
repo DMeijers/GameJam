@@ -23,6 +23,9 @@ EditorUserSettings:
     Coherence.Package.LastInstallation:
       value: 531f05564b0d
       flags: 0
+    Coherence.Settings.ActiveSchemas.Hash:
+      value: 05570404500c51035d595f2615210a1345414e72782e20337c781b66bbb86d69
+      flags: 0
     Coherence.Settings.Email:
       value: 025559030c5f0c491e2e042d042e5e191a591626
       flags: 0
@@ -30,7 +33,7 @@ EditorUserSettings:
       value: 0057510c0e435c59025f043415305c431105107a
       flags: 0
     Coherence.Settings.UserLoginEncryptedToken:
-      value: 514b1f5f4a7e387e2c5a1c2127094d421f3e3e653d192e3c02232465e0f02515e7b620cee03b3b32160ef9380e2e1212a1120759fe26003e230ac70d34d3022117920ce73bea3e3afc2a28d6de17e4f2d7d5c7bfdefbd7dd918da4aad9e5fbb7dda0aae8f2bcccfaac96e980a9d3d6ebf0d2e1c5ebd7ffe9eb8484c6badfd9c4d4d0b09df3a8fdf58a8e84a0949e83b4cbb881c4baa4b398d2878ce5758b8d4e76503aa997bd93d9aa885e827b66adbb207f9c7056d3d79e9db15985c599b09f78b78ed47493c3af76ca68ba374e597a6553271a725f3231
+      value: 
       flags: 0
     RecentlyUsedSceneGuid-0:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
@@ -40,6 +43,9 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-2:
       value: 0005055307575e035a5a0d2013225e444f4e4b2b7d7d756275794f6ab4b5606e
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 55545057000d5b59540a0d7142735b44134f197b282a25692e2b4a65b1b3323d
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
