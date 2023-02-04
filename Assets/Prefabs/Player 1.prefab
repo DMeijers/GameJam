@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 7233859180643697095}
   - component: {fileID: -6858243812009741368}
   - component: {fileID: 8187884921552414786}
-  - component: {fileID: -3799932360087611289}
+  - component: {fileID: 2049665881509133795}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -421,14 +421,14 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: -6858243812009741368}
       lodStepsActive: 1
-    - component: {fileID: -3799932360087611289}
+    - component: {fileID: 2049665881509133795}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_1_555d1695bf1878941bdcea6e7bdd0b10
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id11, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -650,7 +650,8 @@ MonoBehaviour:
   height: 0
   holdDuration: 3
   spawnRadius: 1
-  specificObjects: []
+  specificObjects:
+  - {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
 --- !u!95 &8187884921552414786
 Animator:
   serializedVersion: 4
@@ -671,7 +672,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-3799932360087611289
+--- !u!114 &2049665881509133795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -680,7 +681,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7178693601366539630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aa4e2fa2344c45e6a552d2ddc7d4de7, type: 3}
+  m_Script: {fileID: 11500000, guid: cabf36e8042b5480db9c99debb61c25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 5514195859793615702}
+  objectArray: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
+  targetTag: trap
+  height: 1
+  holdDuration: 5
+  spawnRadius: 1
+  specificObjects: []
