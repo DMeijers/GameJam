@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8f68f4fbb0fe246bda2edf63459035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 595977870695464904, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
+  Player1: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
   Player2: {fileID: 3002353391504816594, guid: 75f6611ace5a6a74daa3ea8e6a775feb, type: 3}
 --- !u!1001 &1782770617
 PrefabInstance:
