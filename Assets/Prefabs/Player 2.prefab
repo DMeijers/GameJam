@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3339001113644909947}
   - component: {fileID: 778897208074614293}
   - component: {fileID: 7395971371247302863}
+  - component: {fileID: 8886839953186016355}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -224,12 +225,14 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 778897208074614293}
       lodStepsActive: 1
+    - component: {fileID: 8886839953186016355}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_2_75f6611ace5a6a74daa3ea8e6a775feb
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2_id8, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -470,6 +473,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8886839953186016355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002353391504816594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabf36e8042b5480db9c99debb61c25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trap: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
 --- !u!1 &8549511878343277733
 GameObject:
   m_ObjectHideFlags: 0
