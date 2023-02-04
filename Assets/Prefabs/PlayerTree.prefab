@@ -2213,7 +2213,7 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id11, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2453,7 +2453,11 @@ MonoBehaviour:
   height: 0.01
   holdDuration: 1
   spawnRadius: 1
-  specificObjects: []
+  specificObjects:
+  - {fileID: 5556915219104572068, guid: b4bece24bc468c34587f46fa49fba06f, type: 3}
+  - {fileID: 8252681013158518728, guid: 055f8f777c9c41a4d90ba8bc1ab22dae, type: 3}
+  - {fileID: 1142328404444112295, guid: 7a150e548341e554686c3ad454e4222c, type: 3}
+  - {fileID: 3576073398359058134, guid: e19425375427f9b488aa3730f7396c91, type: 3}
   objectCounter: 0
   image: {fileID: 138527672}
 --- !u!95 &5624696503662188214
