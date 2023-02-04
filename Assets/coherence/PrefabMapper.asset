@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063a0485677644868a7e4dfa2f5a482a, type: 3}
   m_Name: PrefabMapper
   m_EditorClassIdentifier: 
-  hasGuidIssue: 0
+  hasGuidIssue: 1
   prefabMappings:
   - prefab: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
   - prefab: {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}

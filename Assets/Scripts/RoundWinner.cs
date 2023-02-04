@@ -11,21 +11,11 @@ public class RoundWinner : MonoBehaviour
     public float timer = 240.0f;
     
     public Text resultText;
-   
 
+    void Start()
+    {
     
-
-
-
-
-void Start()
-{
-    
-}
-
-void Update()
-{
-    
+    }
     void DetermineWinner()
      {
     //these scores are fixed for testing
@@ -47,5 +37,5 @@ void Update()
        {
         resultText.text = "It's a Tie!";
        }
-       }
+     }
 }
