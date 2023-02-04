@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2458065483698364635}
   - component: {fileID: 2933440642516411275}
   - component: {fileID: 3339001113644909947}
+  - component: {fileID: 5709397024854257982}
   - component: {fileID: 7395971371247302863}
   m_Layer: 0
   m_Name: Player 2
@@ -221,6 +222,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 7395971371247302863}
       lodStepsActive: 1
+    - component: {fileID: 5709397024854257982}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_2_75f6611ace5a6a74daa3ea8e6a775feb
@@ -261,11 +264,16 @@ MonoBehaviour:
   - rid: 6612970994863964169
   - rid: 6612970994863964170
   - rid: 6612970994863964171
+  - rid: 5413662195583549441
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 5413662195583549441
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 5709397024854257982}
     - rid: 6612970994863964162
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -422,6 +430,23 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 4438379334096457343}
+--- !u!114 &5709397024854257982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002353391504816594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d65bb48d7c45c42b843555230773ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 181711312682522833, guid: 3bcf20e841cfdc74388cde29fa1de9ba, type: 3}
+  targetTag: target
+  height: 0
+  holdDuration: 3
+  spawnRadius: 1
 --- !u!95 &7395971371247302863
 Animator:
   serializedVersion: 4

@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 7505700420132168807}
   - component: {fileID: 7097950036933568311}
   - component: {fileID: 7233859180643697095}
+  - component: {fileID: -6858243812009741368}
   - component: {fileID: 8187884921552414786}
   m_Layer: 0
   m_Name: Player 1
@@ -417,6 +418,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 8187884921552414786}
       lodStepsActive: 1
+    - component: {fileID: -6858243812009741368}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_1_555d1695bf1878941bdcea6e7bdd0b10
@@ -457,11 +460,16 @@ MonoBehaviour:
   - rid: 6612970994863964169
   - rid: 6612970994863964170
   - rid: 6612970994863964171
+  - rid: 5413662195583549440
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 5413662195583549440
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: -6858243812009741368}
     - rid: 6612970994863964162
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -618,6 +626,23 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 8623580981150223043}
+--- !u!114 &-6858243812009741368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178693601366539630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d65bb48d7c45c42b843555230773ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 181711312682522833, guid: 3bcf20e841cfdc74388cde29fa1de9ba, type: 3}
+  targetTag: target
+  height: 0
+  holdDuration: 3
+  spawnRadius: 1
 --- !u!95 &8187884921552414786
 Animator:
   serializedVersion: 4
