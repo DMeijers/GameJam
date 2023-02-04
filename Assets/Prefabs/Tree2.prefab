@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3424908670002489489}
+  - component: {fileID: -2760503179901221962}
   m_Layer: 0
   m_Name: Tree2
   m_TagString: Untagged
@@ -41,6 +42,200 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2760503179901221962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2651609620033253931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff62c046a053f416a8dc48ad6483a25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAuthorityGained:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateAuthority:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInputAuthority:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAuthorityLost:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateRemote:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInputRemote:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAuthorityTransferRejected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAuthorityRequestRejected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConnectedEntityChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInputSimulatorConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInputOwnerAssigned:
+    m_PersistentCalls:
+      m_Calls: []
+  archetype:
+    boundComponents:
+    - component: {fileID: 3424908670002489489}
+      lodStepsActive: 1
+    - component: {fileID: 5221643420651379083}
+      lodStepsActive: 1
+    - component: {fileID: 1903396689913359624}
+      lodStepsActive: 1
+    - component: {fileID: 6711722047582171141}
+      lodStepsActive: 1
+    - component: {fileID: 8470928140493282731}
+      lodStepsActive: 1
+    - component: {fileID: 1227938430274985835}
+      lodStepsActive: 1
+    - component: {fileID: 5344895857599244224}
+      lodStepsActive: 1
+    - component: {fileID: 4812122006185361070}
+      lodStepsActive: 1
+    - component: {fileID: 5605895268496640043}
+      lodStepsActive: 1
+    - component: {fileID: 6843746176725618655}
+      lodStepsActive: 1
+    - component: {fileID: 7809863649626352462}
+      lodStepsActive: 1
+    - component: {fileID: 7756141881519657293}
+      lodStepsActive: 1
+    - component: {fileID: 4184245873775734176}
+      lodStepsActive: 1
+    - component: {fileID: 3462255644678365732}
+      lodStepsActive: 1
+    - component: {fileID: 8430662315434319656}
+      lodStepsActive: 1
+    - component: {fileID: 2607854001644359743}
+      lodStepsActive: 1
+    - component: {fileID: 4803799415684601225}
+      lodStepsActive: 1
+    - component: {fileID: 3387355416119225885}
+      lodStepsActive: 1
+    - component: {fileID: 5609131151188640350}
+      lodStepsActive: 1
+    - component: {fileID: 1886814852650582497}
+      lodStepsActive: 1
+    - component: {fileID: 61621419918220885}
+      lodStepsActive: 1
+    - component: {fileID: 1055746300594761421}
+      lodStepsActive: 1
+    - component: {fileID: 8695229726464017129}
+      lodStepsActive: 1
+    - component: {fileID: 1438702547874821928}
+      lodStepsActive: 1
+    - component: {fileID: 3929625657971339930}
+      lodStepsActive: 1
+    - component: {fileID: 6888589281404560622}
+      lodStepsActive: 1
+    - component: {fileID: 2491929285515738189}
+      lodStepsActive: 1
+    - component: {fileID: 6100324389132396858}
+      lodStepsActive: 1
+    - component: {fileID: 6892127777293398086}
+      lodStepsActive: 1
+    - component: {fileID: 1476803455922679079}
+      lodStepsActive: 1
+    - component: {fileID: 3098692579065126051}
+      lodStepsActive: 1
+    lodLevels:
+    - distance: 0
+    archetypeName: Tree2_3d52409f49bc3ee4fbe52ae04f61f837
+    GeneratesArchetypeDefinition: 0
+  InterpolationLocation: 2
+  bakedScriptType: Coherence.Generated.CoherenceSyncTree2_id17, Assembly-CSharp
+  approveAuthorityTransferRequests: 1
+  simulationType: 0
+  authorityTransferType: 2
+  orphanedBehavior: 1
+  lifetimeType: 1
+  uniquenessType: 0
+  coherenceUUID: 
+  destructionBehavior: 0
+  preserveChildren: 0
+  reflectionBindings: []
+  customBindings: []
+  bindings:
+  - rid: 6612971016001159178
+  onNetworkedInstantiation:
+    m_PersistentCalls:
+      m_Calls: []
+  onBeforeNetworkedInstantiation:
+    m_PersistentCalls:
+      m_Calls: []
+  onNetworkedDestruction:
+    m_PersistentCalls:
+      m_Calls: []
+  remoteVersionPrefabName: Tree2
+  PrefabGuid: 3d52409f49bc3ee4fbe52ae04f61f837
+  selectedSynchronizedPrefabOption: 2
+  usingReflection: 1
+  coherenceTag: 
+  componentActions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6612971016001159178
+      type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 6612971016001159179
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 768ab333-e70a-4e9e-a49f-d6e7766cc320
+        archetypeData:
+          type: 7
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 7
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 3424908670002489489}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 6612971016001159179
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: position
+        monoAssemblyType: UnityEngine.Vector3, UnityEngine
+        required: 1
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 64
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.PositionBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
 --- !u!1 &2934465056010906708
 GameObject:
   m_ObjectHideFlags: 0

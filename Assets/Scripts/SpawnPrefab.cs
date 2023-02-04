@@ -9,6 +9,8 @@ public class SpawnPrefab : MonoBehaviour
 
     public void SpawnPlayer()
     {
+        AudioManager.Instance.play("epic");
+        AudioManager.Instance.play("level_select");
         if (GameObject.FindGameObjectWithTag("Player"))
             Instantiate(Player2);
         else
