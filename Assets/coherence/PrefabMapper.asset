@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063a0485677644868a7e4dfa2f5a482a, type: 3}
   m_Name: PrefabMapper
   m_EditorClassIdentifier: 
-  hasGuidIssue: 1
+  hasGuidIssue: 0
   prefabMappings:
   - prefab: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
   - prefab: {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}
@@ -25,6 +25,11 @@ MonoBehaviour:
   - prefab: {fileID: 181711312682522833, guid: 3bcf20e841cfdc74388cde29fa1de9ba, type: 3}
   - prefab: {fileID: 6642824383705400218, guid: 6e41740ccd468754ebce2e5459d93cdd, type: 3}
   - prefab: {fileID: 4826320148041391961, guid: 6d57491473fb68a4a87f6eca2180c0d4, type: 3}
-  - prefab: {fileID: 7178693601366539630, guid: 555d1695bf1878941bdcea6e7bdd0b10, type: 3}
   - prefab: {fileID: 5471140216846839113, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
-  - prefab: {fileID: 3002353391504816594, guid: 75f6611ace5a6a74daa3ea8e6a775feb, type: 3}
+  - prefab: {fileID: 5556915219104572068, guid: b4bece24bc468c34587f46fa49fba06f, type: 3}
+  - prefab: {fileID: 8252681013158518728, guid: 055f8f777c9c41a4d90ba8bc1ab22dae, type: 3}
+  - prefab: {fileID: 1142328404444112295, guid: 7a150e548341e554686c3ad454e4222c, type: 3}
+  - prefab: {fileID: 3576073398359058134, guid: e19425375427f9b488aa3730f7396c91, type: 3}
+  - prefab: {fileID: 5377922659639053592, guid: 5df1f8a97e35cf4489a4be093fd1f124, type: 3}
+  - prefab: {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
+  - prefab: {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
