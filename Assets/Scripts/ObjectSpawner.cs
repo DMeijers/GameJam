@@ -4,60 +4,83 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
-public GameObject objectToSpawn;
-    public string targetTag = "Target";
-    public float height = 1.0f;
-    public float holdDuration = 3.0f;
-    public float spawnRadius = 1.0f;
-    public int objectCounter = 0;
-    private GameObject nearestTarget;
-    private float distance;
-    private float holdStartTime;
+public GameObject[] objectArray; // array of prefab objects
+public string targetTag = "Target";
+public float height = 1.0f;
+public float holdDuration = 3.0f;
+public float spawnRadius = 1.0f;
+public GameObject[] specificObjects;
 
-    void Update()
+private GameObject nearestTarget;
+private float distance;
+private float holdStartTime;
+
+public int objectCounter = 0;
+
+void Update()
+{
+    Debug.Log(objectCounter);
+    if (Input.GetKey(KeyCode.E))
     {
-        if (Input.GetKey(KeyCode.E))
+        if (holdStartTime == 0)
         {
-            if (holdStartTime == 0)
-            {
-                holdStartTime = Time.time;
-            }
-            else
-            {
-                float timeHeld = Time.time - holdStartTime;
-                if (timeHeld >= holdDuration)
-                {
-                    GameObject[] targets = GameObject.FindGameObjectsWithTag(targetTag);
-                    nearestTarget = null;
-                    distance = Mathf.Infinity;
-                    foreach (GameObject target in targets)
-                    {
-                        Debug.Log(distance);
-                        float currentDistance = Vector3.Distance(transform.position, target.transform.position);
-                        if (currentDistance < distance)
-                        {
-                            distance = currentDistance;
-                            nearestTarget = target;
-                            Debug.Log(nearestTarget);
-                        }
-                    }
-
-                    if (nearestTarget != null && distance <= spawnRadius)
-                    {
-                        Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
-                        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
-                        spawnedObject.transform.parent = nearestTarget.transform;
-                        objectCounter++;
-                        Debug.Log("Object spawned on nearest target!");
-                    }
-
-                    holdStartTime = 0;
-                }
-            }
+            holdStartTime = Time.time;
         }
         else
         {
-            holdStartTime = 0;
+            float timeHeld = Time.time - holdStartTime;
+            if (timeHeld >= holdDuration)
+            {
+                GameObject[] targets = GameObject.FindGameObjectsWithTag(targetTag);
+                nearestTarget = null;
+                distance = Mathf.Infinity;
+                foreach (GameObject target in targets)
+                {
+                    float currentDistance = Vector3.Distance(transform.position, target.transform.position);
+                    if (currentDistance < distance)
+                    {
+                        distance = currentDistance;
+                        nearestTarget = target;
+                    }
+                }
+
+                if (nearestTarget != null && distance <= spawnRadius)
+                {
+                     foreach (GameObject specificObject in specificObjects)
+                    {
+                        if (nearestTarget == specificObject)
+                        {
+                            Destroy(nearestTarget);
+                            break;
+                        }
+                    }
+
+                    int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
+                    GameObject objectToSpawn = objectArray[randomIndex];
+                    Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
+                    Quaternion spawnRotation = transform.rotation;
+
+                    GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+                    spawnedObject.transform.parent = nearestTarget.transform; 
+                    objectCounter++;
+                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
+                    Debug.Log("Object spawned on nearest target!");
+                }
+
+                holdStartTime = 0;
+            }
         }
     }
+    else
+    {
+        holdStartTime = 0;
+    }
+}
+private Color HexToColor(string hex)
+{
+    byte r = byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
+    byte g = byte.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
+    byte b = byte.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
+    return new Color32(r, g, b, 255);
+}
 }
