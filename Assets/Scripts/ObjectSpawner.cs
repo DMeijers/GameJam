@@ -9,7 +9,7 @@ public GameObject objectToSpawn;
     public float height = 1.0f;
     public float holdDuration = 3.0f;
     public float spawnRadius = 1.0f;
-
+    public int objectCounter = 0;
     private GameObject nearestTarget;
     private float distance;
     private float holdStartTime;
@@ -47,6 +47,7 @@ public GameObject objectToSpawn;
                         Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
                         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
                         spawnedObject.transform.parent = nearestTarget.transform;
+                        objectCounter++;
                         Debug.Log("Object spawned on nearest target!");
                     }
 
