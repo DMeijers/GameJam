@@ -242,7 +242,7 @@ MonoBehaviour:
   reflectionBindings: []
   customBindings: []
   bindings:
-  - rid: 6612971014532890626
+  - rid: 585526332186165252
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -254,7 +254,7 @@ MonoBehaviour:
       m_Calls: []
   remoteVersionPrefabName: Player 2
   PrefabGuid: 75f6611ace5a6a74daa3ea8e6a775feb
-  selectedSynchronizedPrefabOption: 3
+  selectedSynchronizedPrefabOption: 2
   usingReflection: 1
   coherenceTag: 
   componentActions: []
@@ -263,15 +263,15 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6612971014532890626
+    - rid: 585526332186165252
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
         descriptor:
-          rid: 6612971014532890627
+          rid: 585526332186165253
         routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
-        guid: f9004c6b-266c-4520-9ddb-16655905d8ce
+        guid: c40c7993-5057-4889-8fb4-1e5317cc8d51
         archetypeData:
           type: 7
           minRange: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
         unityComponent: {fileID: 8709645773894390483}
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 6612971014532890627
+    - rid: 585526332186165253
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
         name: position
