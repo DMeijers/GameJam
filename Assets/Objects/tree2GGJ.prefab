@@ -675,6 +675,8 @@ GameObject:
   - component: {fileID: 4669849374826566460}
   - component: {fileID: 132665989787304071}
   - component: {fileID: -1593411047462933926}
+  - component: {fileID: -6708546001895744703}
+  - component: {fileID: -3757568648319616502}
   m_Layer: 0
   m_Name: tree2GGJ
   m_TagString: Untagged
@@ -809,18 +811,22 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 4920709748764550926}
       lodStepsActive: 1
+    - component: {fileID: -6708546001895744703}
+      lodStepsActive: 1
+    - component: {fileID: -3757568648319616502}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: tree2GGJ_6deeb2c1af05aa8418d68271a04a30d0
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSynctree2GGJ_id6, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSynctree2GGJ_id5, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 1
   lifetimeType: 1
-  uniquenessType: 1
+  uniquenessType: 0
   coherenceUUID: fa30a9fe-b82f-4715-a492-f71f746ac3ae
   destructionBehavior: 0
   preserveChildren: 0
@@ -954,6 +960,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoAssignOnSceneInstances: 1
+--- !u!111 &-6708546001895744703
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441883195881441670}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a3eef79ff57a1d140bdd83f577e28ed2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a3eef79ff57a1d140bdd83f577e28ed2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &-3757568648319616502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441883195881441670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd085c83ac7af9408c110f1d55033d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6427904263756327341
 GameObject:
   m_ObjectHideFlags: 0

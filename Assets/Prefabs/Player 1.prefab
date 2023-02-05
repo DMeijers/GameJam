@@ -423,9 +423,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_1_555d1695bf1878941bdcea6e7bdd0b10
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id0, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id13, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -438,9 +438,7 @@ MonoBehaviour:
   reflectionBindings: []
   customBindings: []
   bindings:
-  - rid: 6612970994863964162
-  - rid: 6612970994863964164
-  - rid: 6612970994863964166
+  - rid: 6612971014532890624
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -453,28 +451,23 @@ MonoBehaviour:
   remoteVersionPrefabName: Player 1
   PrefabGuid: 555d1695bf1878941bdcea6e7bdd0b10
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 0
+  usingReflection: 1
   coherenceTag: 
-  componentActions:
-  - rid: 6612970994863964168
-  - rid: 6612970994863964169
-  - rid: 6612970994863964170
-  - rid: 6612970994863964171
-  - rid: 6612970998813687812
+  componentActions: []
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6612970994863964162
+    - rid: 6612971014532890624
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
         descriptor:
-          rid: 6612970994863964163
+          rid: 6612971014532890625
         routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
-        guid: 63bf068f-276e-47e4-884e-48d1a41e45bf
+        guid: 4a8d7dd8-9aa4-4071-a1d3-14b0f374ddb7
         archetypeData:
           type: 7
           minRange: 0
@@ -492,7 +485,7 @@ MonoBehaviour:
         unityComponent: {fileID: 3669228514968737391}
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 6612970994863964163
+    - rid: 6612971014532890625
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
         name: position
@@ -512,120 +505,6 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 6612970994863964164
-      type: {class: RotationBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
-      data:
-        descriptor:
-          rid: 6612970994863964165
-        routing: 0
-        isPredicted: 0
-        defaultInterpolationPath: 
-        guid: e51500ff-37cd-4d3a-8cc1-c8a3109dfd62
-        archetypeData:
-          type: 8
-          minRange: 0
-          maxRange: 0
-          sampleRate: 20
-          floatCompression: 0
-          fields:
-          - type: 8
-            bits: 32
-            minRange: 0
-            maxRange: 0
-            precision: 0.00000008381903171539307
-            floatCompression: 0
-          sharedBinding: {fileID: 0}
-        unityComponent: {fileID: 3669228514968737391}
-        coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 6612970994863964165
-      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
-      data:
-        name: rotation
-        monoAssemblyType: UnityEngine.Quaternion, UnityEngine
-        required: 0
-        enforcesLODingWhenFieldsOverriden: 1
-        valueSyncCallbackName: 
-        memberType: 64
-        parameterAssemblyTypes: []
-        ownerType:
-          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        CustomData:
-          rid: -2
-        bindingType:
-          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.RotationBinding,
-            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        oldName: 
-        oldParameterAssemblyTypes: []
-    - rid: 6612970994863964166
-      type: {class: ScaleBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
-      data:
-        descriptor:
-          rid: 6612970994863964167
-        routing: 0
-        isPredicted: 0
-        defaultInterpolationPath: 
-        guid: 313dc4b1-81c8-4d1a-b952-b527fe3b8868
-        archetypeData:
-          type: 7
-          minRange: 0
-          maxRange: 0
-          sampleRate: 20
-          floatCompression: 0
-          fields:
-          - type: 7
-            bits: 32
-            minRange: 0
-            maxRange: 0
-            precision: 0.001
-            floatCompression: 0
-          sharedBinding: {fileID: 0}
-        unityComponent: {fileID: 3669228514968737391}
-        coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 6612970994863964167
-      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
-      data:
-        name: localScale
-        monoAssemblyType: UnityEngine.Vector3, UnityEngine
-        required: 0
-        enforcesLODingWhenFieldsOverriden: 1
-        valueSyncCallbackName: 
-        memberType: 64
-        parameterAssemblyTypes: []
-        ownerType:
-          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        CustomData:
-          rid: -2
-        bindingType:
-          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.ScaleBinding,
-            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        oldName: 
-        oldParameterAssemblyTypes: []
-    - rid: 6612970994863964168
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 5514195859793615702}
-    - rid: 6612970994863964169
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 7505700420132168807}
-    - rid: 6612970994863964170
-      type: {class: KinematicRigidbodyComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 7097950036933568311}
-        setOnRemote: 1
-        resetOnAuthority: 0
-    - rid: 6612970994863964171
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 8623580981150223043}
-    - rid: 6612970998813687812
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: -6858243812009741368}
 --- !u!114 &-6858243812009741368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,6 +526,8 @@ MonoBehaviour:
   height: 0
   holdDuration: 3
   spawnRadius: 1
+  objectCounter: 0
+  image: {fileID: 0}
 --- !u!95 &8187884921552414786
 Animator:
   serializedVersion: 4
