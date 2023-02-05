@@ -24,9 +24,9 @@ namespace Coherence.Generated
 
 
 	[Preserve]
-	[AddComponentMenu("coherence/Baked/Baked 'Tree3' (auto assigned)")]
+	[AddComponentMenu("coherence/Baked/Baked 'building2' (auto assigned)")]
 	[RequireComponent(typeof(CoherenceSync))]
-	public class CoherenceSyncTree3_id16 : CoherenceSyncBaked
+	public class CoherenceSyncbuilding2_id14 : CoherenceSyncBaked
 	{
 		private CoherenceSync coherenceSync;
 		private Logger logger;
@@ -41,7 +41,7 @@ namespace Coherence.Generated
 			coherenceSync = GetComponent<CoherenceSync>();
 			coherenceSync.usingReflection = false;
 
-			logger = coherenceSync.logger.With<CoherenceSyncTree3_id16>();
+			logger = coherenceSync.logger.With<CoherenceSyncbuilding2_id14>();
 		}
 
 		public override List<ICoherenceComponentData> CreateEntity()
@@ -80,7 +80,7 @@ namespace Coherence.Generated
 			switch(command)
 			{
 				default:
-					logger.Warning($"[CoherenceSyncTree3_id16] Unhandled command: {command.GetType()}.");
+					logger.Warning($"[CoherenceSyncbuilding2_id14] Unhandled command: {command.GetType()}.");
 					break;
 			}
 		}

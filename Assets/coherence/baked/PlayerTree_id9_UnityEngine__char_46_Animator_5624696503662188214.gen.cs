@@ -15,7 +15,7 @@ namespace Coherence.Generated
 	using Coherence.Toolkit;
 	using UnityEngine;
 
-	public struct PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214 : ICoherenceComponentData
+	public struct PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214 : ICoherenceComponentData
 	{
 		public bool IsMoving;
 		public bool GoingLeft;
@@ -24,10 +24,10 @@ namespace Coherence.Generated
 
 		public override string ToString()
 		{
-			return $"PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214(IsMoving: {IsMoving}, GoingLeft: {GoingLeft}, GoingRight: {GoingRight}, GoingBack: {GoingBack})";
+			return $"PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214(IsMoving: {IsMoving}, GoingLeft: {GoingLeft}, GoingRight: {GoingRight}, GoingBack: {GoingBack})";
 		}
 
-		public uint GetComponentType() => Definition.InternalPlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214;
+		public uint GetComponentType() => Definition.InternalPlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214;
 
 		public const int order = 0;
 
@@ -45,7 +45,7 @@ namespace Coherence.Generated
 
 		public ICoherenceComponentData MergeWith(ICoherenceComponentData data, uint mask)
 		{
-			var other = (PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214)data;
+			var other = (PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214)data;
 			if ((mask & 0x01) != 0)
 			{
 				Frame = other.Frame;
@@ -73,7 +73,7 @@ namespace Coherence.Generated
 			return this;
 		}
 
-		public static void Serialize(PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214 data, uint mask, IOutProtocolBitStream bitStream)
+		public static void Serialize(PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214 data, uint mask, IOutProtocolBitStream bitStream)
 		{
 			if (bitStream.WriteMask((mask & 0x01) != 0))
 			{
@@ -97,10 +97,10 @@ namespace Coherence.Generated
 			mask >>= 1;
 		}
 
-		public static (PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214, uint, uint?) Deserialize(InProtocolBitStream bitStream)
+		public static (PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214, uint, uint?) Deserialize(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
-			var val = new PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214();
+			var val = new PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214();
 	
 			if (bitStream.ReadMask())
 			{
@@ -124,10 +124,10 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
-		public static (PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214_LOD0(InProtocolBitStream bitStream)
+		public static (PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
-			var val = new PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214();
+			var val = new PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214();
 			if (bitStream.ReadMask())
 			{
 				val.IsMoving = bitStream.ReadBool();
@@ -161,7 +161,7 @@ namespace Coherence.Generated
 		/// </summary>
 		public void ResetByteArrays(ICoherenceComponentData lastSent, uint mask)
 		{
-			var last = lastSent as PlayerTree_id19_UnityEngine__char_46_Animator_5624696503662188214?;
+			var last = lastSent as PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214?;
 	
 		}
 	}

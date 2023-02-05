@@ -30,7 +30,7 @@ namespace Coherence.Generated
 		{
 			CastedUnityComponent = (UnityEngine.Animator)UnityComponent;
 		}
-		public override string CoherenceComponentName => "PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149";
+		public override string CoherenceComponentName => "PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149";
 
 		public override uint FieldMask => 0b00000000000000000000000000000001;
 
@@ -42,20 +42,20 @@ namespace Coherence.Generated
 
 		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			return update.IsMoving;
 		}
 		
 		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			update.IsMoving = Value;
 			return update;
 		}
 
 		public override ICoherenceComponentData CreateComponentData()
 		{
-			return new PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149();
+			return new PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149();
 		}
 	}
 
@@ -67,7 +67,7 @@ namespace Coherence.Generated
 		{
 			CastedUnityComponent = (UnityEngine.Animator)UnityComponent;
 		}
-		public override string CoherenceComponentName => "PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149";
+		public override string CoherenceComponentName => "PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149";
 
 		public override uint FieldMask => 0b00000000000000000000000000000010;
 
@@ -79,20 +79,20 @@ namespace Coherence.Generated
 
 		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			return update.GoingLeft;
 		}
 		
 		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			update.GoingLeft = Value;
 			return update;
 		}
 
 		public override ICoherenceComponentData CreateComponentData()
 		{
-			return new PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149();
+			return new PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149();
 		}
 	}
 
@@ -104,7 +104,7 @@ namespace Coherence.Generated
 		{
 			CastedUnityComponent = (UnityEngine.Animator)UnityComponent;
 		}
-		public override string CoherenceComponentName => "PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149";
+		public override string CoherenceComponentName => "PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149";
 
 		public override uint FieldMask => 0b00000000000000000000000000000100;
 
@@ -116,20 +116,20 @@ namespace Coherence.Generated
 
 		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			return update.GoingRight;
 		}
 		
 		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			update.GoingRight = Value;
 			return update;
 		}
 
 		public override ICoherenceComponentData CreateComponentData()
 		{
-			return new PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149();
+			return new PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149();
 		}
 	}
 
@@ -141,7 +141,7 @@ namespace Coherence.Generated
 		{
 			CastedUnityComponent = (UnityEngine.Animator)UnityComponent;
 		}
-		public override string CoherenceComponentName => "PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149";
+		public override string CoherenceComponentName => "PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149";
 
 		public override uint FieldMask => 0b00000000000000000000000000001000;
 
@@ -153,20 +153,20 @@ namespace Coherence.Generated
 
 		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			return update.GoingBack;
 		}
 		
 		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
 		{
-			var update = (PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
+			var update = (PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149)coherenceComponent;
 			update.GoingBack = Value;
 			return update;
 		}
 
 		public override ICoherenceComponentData CreateComponentData()
 		{
-			return new PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149();
+			return new PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149();
 		}
 	}
 
@@ -174,7 +174,7 @@ namespace Coherence.Generated
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'PlayerHuman' (auto assigned)")]
 	[RequireComponent(typeof(CoherenceSync))]
-	public class CoherenceSyncPlayerHuman_id18 : CoherenceSyncBaked
+	public class CoherenceSyncPlayerHuman_id10 : CoherenceSyncBaked
 	{
 		private CoherenceSync coherenceSync;
 		private Logger logger;
@@ -189,42 +189,42 @@ namespace Coherence.Generated
 			coherenceSync = GetComponent<CoherenceSync>();
 			coherenceSync.usingReflection = false;
 
-			logger = coherenceSync.logger.With<CoherenceSyncPlayerHuman_id18>();
-			if (coherenceSync.TryGetBindingByGuid("1bddc179-aa70-46b9-b129-d3123e91f180", "IsMoving", out Binding InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_IsMoving))
+			logger = coherenceSync.logger.With<CoherenceSyncPlayerHuman_id10>();
+			if (coherenceSync.TryGetBindingByGuid("1bddc179-aa70-46b9-b129-d3123e91f180", "IsMoving", out Binding InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_IsMoving))
 			{
 				var clone = new Binding_6d57491473fb68a4a87f6eca2180c0d4_1bddc179_aa70_46b9_b129_d3123e91f180();
-				InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_IsMoving.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_IsMoving)] = clone;
+				InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_IsMoving.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_IsMoving)] = clone;
 			}
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Animator).IsMoving");
 			}
-			if (coherenceSync.TryGetBindingByGuid("76ec269b-54fa-4e06-9197-073eac35d094", "GoingLeft", out Binding InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft))
+			if (coherenceSync.TryGetBindingByGuid("76ec269b-54fa-4e06-9197-073eac35d094", "GoingLeft", out Binding InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft))
 			{
 				var clone = new Binding_6d57491473fb68a4a87f6eca2180c0d4_76ec269b_54fa_4e06_9197_073eac35d094();
-				InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft)] = clone;
+				InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingLeft)] = clone;
 			}
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Animator).GoingLeft");
 			}
-			if (coherenceSync.TryGetBindingByGuid("3505f0c8-e79f-4ad8-8777-4eeb5f0b1e8f", "GoingRight", out Binding InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingRight))
+			if (coherenceSync.TryGetBindingByGuid("3505f0c8-e79f-4ad8-8777-4eeb5f0b1e8f", "GoingRight", out Binding InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingRight))
 			{
 				var clone = new Binding_6d57491473fb68a4a87f6eca2180c0d4_3505f0c8_e79f_4ad8_8777_4eeb5f0b1e8f();
-				InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingRight.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingRight)] = clone;
+				InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingRight.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingRight)] = clone;
 			}
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Animator).GoingRight");
 			}
-			if (coherenceSync.TryGetBindingByGuid("064cf339-acfa-46a1-bb5e-fbe7275c3722", "GoingBack", out Binding InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingBack))
+			if (coherenceSync.TryGetBindingByGuid("064cf339-acfa-46a1-bb5e-fbe7275c3722", "GoingBack", out Binding InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingBack))
 			{
 				var clone = new Binding_6d57491473fb68a4a87f6eca2180c0d4_064cf339_acfa_46a1_bb5e_fbe7275c3722();
-				InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingBack.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id18_UnityEngine__char_46_Animator_5819893876217580149_GoingBack)] = clone;
+				InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingBack.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_PlayerHuman_id10_UnityEngine__char_46_Animator_5819893876217580149_GoingBack)] = clone;
 			}
 			else
 			{
@@ -268,7 +268,7 @@ namespace Coherence.Generated
 			switch(command)
 			{
 				default:
-					logger.Warning($"[CoherenceSyncPlayerHuman_id18] Unhandled command: {command.GetType()}.");
+					logger.Warning($"[CoherenceSyncPlayerHuman_id10] Unhandled command: {command.GetType()}.");
 					break;
 			}
 		}

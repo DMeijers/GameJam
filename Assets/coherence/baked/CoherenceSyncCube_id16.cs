@@ -24,9 +24,9 @@ namespace Coherence.Generated
 
 
 	[Preserve]
-	[AddComponentMenu("coherence/Baked/Baked 'Building1' (auto assigned)")]
+	[AddComponentMenu("coherence/Baked/Baked 'Cube' (auto assigned)")]
 	[RequireComponent(typeof(CoherenceSync))]
-	public class CoherenceSyncBuilding1_id10 : CoherenceSyncBaked
+	public class CoherenceSyncCube_id16 : CoherenceSyncBaked
 	{
 		private CoherenceSync coherenceSync;
 		private Logger logger;
@@ -41,7 +41,7 @@ namespace Coherence.Generated
 			coherenceSync = GetComponent<CoherenceSync>();
 			coherenceSync.usingReflection = false;
 
-			logger = coherenceSync.logger.With<CoherenceSyncBuilding1_id10>();
+			logger = coherenceSync.logger.With<CoherenceSyncCube_id16>();
 		}
 
 		public override List<ICoherenceComponentData> CreateEntity()
@@ -80,7 +80,7 @@ namespace Coherence.Generated
 			switch(command)
 			{
 				default:
-					logger.Warning($"[CoherenceSyncBuilding1_id10] Unhandled command: {command.GetType()}.");
+					logger.Warning($"[CoherenceSyncCube_id16] Unhandled command: {command.GetType()}.");
 					break;
 			}
 		}

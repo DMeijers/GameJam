@@ -1738,7 +1738,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6387385224436770876}
   - component: {fileID: 1028124536506954310}
-  - component: {fileID: 3228445828557592247}
   m_Layer: 0
   m_Name: TreeMan
   m_TagString: Untagged
@@ -1783,19 +1782,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3228445828557592247
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6048155807303971462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.3311176, y: 2.289534, z: 2.1903632}
-  m_Center: {x: 0.0247981, y: 0.6447107, z: 0.5951531}
 --- !u!1 &6526008174210131959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,6 +1833,7 @@ GameObject:
   - component: {fileID: 2269046520460430652}
   - component: {fileID: 5624696503662188214}
   - component: {fileID: 243786132}
+  - component: {fileID: 5323881969635905335}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -1933,8 +1920,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9917383, y: 1, z: 1}
+  m_Center: {x: 0.3569442, y: 0, z: 0}
 --- !u!114 &8298306400517334434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,8 +2045,6 @@ MonoBehaviour:
     - component: {fileID: 6387385224436770876}
       lodStepsActive: 1
     - component: {fileID: 1028124536506954310}
-      lodStepsActive: 1
-    - component: {fileID: 3228445828557592247}
       lodStepsActive: 1
     - component: {fileID: 2376345812950499535}
       lodStepsActive: 1
@@ -2216,14 +2201,14 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id16, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 0
-  coherenceUUID: 
+  uniquenessType: 1
+  coherenceUUID: f426f5c0-1465-43aa-af8e-a432da6e60ff
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -2260,6 +2245,7 @@ MonoBehaviour:
   - rid: 6612971014532890628
   - rid: 6612971014532890629
   - rid: 6612971014532890630
+  - rid: 6612971020508987392
   references:
     version: 2
     RefIds:
@@ -2629,6 +2615,10 @@ MonoBehaviour:
         oldName: 
         oldParameterAssemblyTypes: []
         parameterHash: -1102334685
+    - rid: 6612971020508987392
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 243786132}
 --- !u!114 &2269046520460430652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,17 +2632,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectArray:
+  - {fileID: 5377922659639053592, guid: 5df1f8a97e35cf4489a4be093fd1f124, type: 3}
   - {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
   - {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
   targetTag: target
   height: 0.01
   holdDuration: 1
   spawnRadius: 1
-  specificObjects:
-  - {fileID: 5556915219104572068, guid: b4bece24bc468c34587f46fa49fba06f, type: 3}
-  - {fileID: 8252681013158518728, guid: 055f8f777c9c41a4d90ba8bc1ab22dae, type: 3}
-  - {fileID: 1142328404444112295, guid: 7a150e548341e554686c3ad454e4222c, type: 3}
-  - {fileID: 3576073398359058134, guid: e19425375427f9b488aa3730f7396c91, type: 3}
   objectCounter: 0
   image: {fileID: 138527672}
 --- !u!95 &5624696503662188214
@@ -2692,6 +2678,19 @@ MonoBehaviour:
   height: 1
   holdDuration: 5
   spawnRadius: 1
+--- !u!114 &5323881969635905335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642824383705400218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoAssignOnSceneInstances: 1
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -9036070046175922232}
   m_Layer: 0
   m_Name: Building3
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1142328404444112295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.061779104, y: 0.061779104, z: 0.061779104}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7161062339108900359}
@@ -98,9 +98,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Building3_7a150e548341e554686c3ad454e4222c
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding3_id12, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding3_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

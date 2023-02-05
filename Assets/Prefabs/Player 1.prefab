@@ -423,9 +423,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Player__char_32_1_555d1695bf1878941bdcea6e7bdd0b10
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id0, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer__char_32_1_id13, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -526,7 +526,6 @@ MonoBehaviour:
   height: 0
   holdDuration: 3
   spawnRadius: 1
-  specificObjects: []
   objectCounter: 0
   image: {fileID: 0}
 --- !u!95 &8187884921552414786

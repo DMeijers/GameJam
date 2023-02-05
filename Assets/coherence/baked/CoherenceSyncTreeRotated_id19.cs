@@ -24,9 +24,9 @@ namespace Coherence.Generated
 
 
 	[Preserve]
-	[AddComponentMenu("coherence/Baked/Baked 'HexagonPlanetLast' (auto assigned)")]
+	[AddComponentMenu("coherence/Baked/Baked 'TreeRotated' (auto assigned)")]
 	[RequireComponent(typeof(CoherenceSync))]
-	public class CoherenceSyncHexagonPlanetLast_id9 : CoherenceSyncBaked
+	public class CoherenceSyncTreeRotated_id19 : CoherenceSyncBaked
 	{
 		private CoherenceSync coherenceSync;
 		private Logger logger;
@@ -41,7 +41,7 @@ namespace Coherence.Generated
 			coherenceSync = GetComponent<CoherenceSync>();
 			coherenceSync.usingReflection = false;
 
-			logger = coherenceSync.logger.With<CoherenceSyncHexagonPlanetLast_id9>();
+			logger = coherenceSync.logger.With<CoherenceSyncTreeRotated_id19>();
 		}
 
 		public override List<ICoherenceComponentData> CreateEntity()
@@ -80,7 +80,7 @@ namespace Coherence.Generated
 			switch(command)
 			{
 				default:
-					logger.Warning($"[CoherenceSyncHexagonPlanetLast_id9] Unhandled command: {command.GetType()}.");
+					logger.Warning($"[CoherenceSyncTreeRotated_id19] Unhandled command: {command.GetType()}.");
 					break;
 			}
 		}

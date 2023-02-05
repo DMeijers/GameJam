@@ -10,11 +10,12 @@ public string targetTag = "Target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;
 public float spawnRadius = 1.0f;
-public GameObject[] specificObjects;
 
 private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
+
+    private GameObject[] objectsFind; // array of prefabs with tag building
 
 public int objectCounter = 0;
 
@@ -51,29 +52,31 @@ void Update()
 
                 if (nearestTarget != null && distance <= spawnRadius)
                 {
-                     foreach (GameObject specificObject in specificObjects)
-                    {
-                        if (nearestTarget == specificObject)
+                        objectsFind = GameObject.FindGameObjectsWithTag("building");
+
+                        foreach (GameObject item in objectsFind)
                         {
-                            Destroy(nearestTarget);
-                            break;
+                            if (nearestTarget == item)
+                            {
+                                Destroy(item);
+                                break;
+                            }
                         }
-                    }
 
-                    int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
-                    GameObject objectToSpawn = objectArray[randomIndex];
-                    Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
-                    Quaternion spawnRotation = transform.rotation;
+                        int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
+                        GameObject objectToSpawn = objectArray[randomIndex];
+                        Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
+                        Quaternion spawnRotation = transform.rotation;
 
-                    GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
-                    spawnedObject.transform.parent = nearestTarget.transform;
+                        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+                        spawnedObject.transform.parent = nearestTarget.transform;
                         image.fillAmount -= 0.2f;
-                    objectCounter++;
-                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
-                    Debug.Log("Object spawned on nearest target!");
+                        objectCounter++;
+                        nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
+                        Debug.Log("Object spawned on nearest target!");
                     
                     
-                    }
+                }
 
                 holdStartTime = 0;
             }

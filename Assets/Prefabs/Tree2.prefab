@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -2760503179901221962}
   m_Layer: 0
   m_Name: Tree2
-  m_TagString: Untagged
+  m_TagString: tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,9 +154,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Tree2_3d52409f49bc3ee4fbe52ae04f61f837
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSyncTree2_id15, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncTree2_id17, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
