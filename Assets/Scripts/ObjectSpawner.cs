@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ObjectSpawner : MonoBehaviour
 {
 public GameObject[] objectArray; // array of prefab objects
-public string targetTag = "Target";
+public string targetTag = "target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;
 public float spawnRadius = 1.0f;
@@ -14,8 +14,6 @@ public float spawnRadius = 1.0f;
 private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
-
-    private GameObject[] objectsFind; // array of prefabs with tag building
 
 public int objectCounter = 0;
 
@@ -29,7 +27,7 @@ void Update()
         if (holdStartTime == 0)
         {
             holdStartTime = Time.time;
-            AudioManager.Instance.play("spawning_1");
+            //AudioManager.Instance.play("spawning_1");
             }
         else
         {
@@ -52,16 +50,16 @@ void Update()
 
                 if (nearestTarget != null && distance <= spawnRadius)
                 {
-                        objectsFind = GameObject.FindGameObjectsWithTag("building");
+                        //objectsFind = GameObject.FindGameObjectsWithTag("building");
 
-                        foreach (GameObject item in objectsFind)
-                        {
-                            if (nearestTarget == item)
-                            {
-                                Destroy(item);
-                                break;
-                            }
-                        }
+                        //foreach (GameObject item in objectsFind)
+                        //{
+                        //    if (nearestTarget == item)
+                        //    {
+                        //        Destroy(item);
+                        //        break;
+                        //    }
+                        //}
 
                         int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
                         GameObject objectToSpawn = objectArray[randomIndex];

@@ -169,7 +169,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuilding1_b4bece24bc468c34587f46fa49fba06f_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuildingRot_d7c48c9304a42cb4786538e9ef8284a4_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -181,7 +181,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypebuilding2_055f8f777c9c41a4d90ba8bc1ab22dae_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuildingRot1_d3b68f2763ee5354ea6e20ba9fe863b6_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -193,19 +193,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuilding3_7a150e548341e554686c3ad454e4222c_WorldPosition_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new WorldPosition();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuilding4_e19425375427f9b488aa3730f7396c91_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeBuildingRot2_e54e3390c037cdb4ea5c1b0191dd93ff_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -218,6 +206,18 @@ namespace Coherence.Generated
 			return (val, mask, 0);
 		}
 		public static (WorldPosition, uint, uint?) DeserializeArchetypeCube_6344a489f82917c4fa01c2adf8b0afd1_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypePlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -253,31 +253,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeTree2_3d52409f49bc3ee4fbe52ae04f61f837_WorldPosition_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new WorldPosition();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeTree3_5a772a534f3f2634fb628cceb128b128_WorldPosition_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new WorldPosition();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeTreeRotated_5df1f8a97e35cf4489a4be093fd1f124_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypePlayerHuman_6d57491473fb68a4a87f6eca2180c0d4_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -301,7 +277,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypePlayerHuman_6d57491473fb68a4a87f6eca2180c0d4_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeTreeRot_9d98c1c2c8ca66341b697cd88abce46b_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();
@@ -313,7 +289,43 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypePlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeTreeRot1_f3e71fd7c178b0741a7f8fa2e92e94cb_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeTreeRot2_665e8f2632a4d3a46a693f897bb7ccae_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeTreeRot3_fd4e093c29f40b14ea1af5200044859c_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new WorldPosition();

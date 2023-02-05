@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ObjectSpawnerHuman : MonoBehaviour
 {
    public GameObject[] objectArray; // array of prefab objects
-public string targetTag = "Target";
+public string targetTag = "target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;
 public float spawnRadius = 1.0f;

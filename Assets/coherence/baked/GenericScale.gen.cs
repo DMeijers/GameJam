@@ -73,54 +73,6 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeBuilding1_b4bece24bc468c34587f46fa49fba06f_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypebuilding2_055f8f777c9c41a4d90ba8bc1ab22dae_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeBuilding3_7a150e548341e554686c3ad454e4222c_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeBuilding4_e19425375427f9b488aa3730f7396c91_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
 		public static (GenericScale, uint, uint?) DeserializeArchetypeCube_6344a489f82917c4fa01c2adf8b0afd1_GenericScale_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
@@ -133,43 +85,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeTree2_3d52409f49bc3ee4fbe52ae04f61f837_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeTree3_5a772a534f3f2634fb628cceb128b128_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypeTreeRotated_5df1f8a97e35cf4489a4be093fd1f124_GenericScale_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new GenericScale();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_GenericScale_LOD0(InProtocolBitStream bitStream)
+		public static (GenericScale, uint, uint?) DeserializeArchetypePlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a_GenericScale_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new GenericScale();
@@ -193,7 +109,7 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
-		public static (GenericScale, uint, uint?) DeserializeArchetypePlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a_GenericScale_LOD0(InProtocolBitStream bitStream)
+		public static (GenericScale, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_GenericScale_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
 			var val = new GenericScale();

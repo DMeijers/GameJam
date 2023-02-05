@@ -1834,6 +1834,8 @@ GameObject:
   - component: {fileID: 5624696503662188214}
   - component: {fileID: 243786132}
   - component: {fileID: -5054251383767793578}
+  - component: {fileID: 6947170389959408659}
+  - component: {fileID: 1924953303815058310}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -2201,7 +2203,7 @@ MonoBehaviour:
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id18, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id16, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2276,7 +2278,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 956009674706004123}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612970994863964163
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2322,7 +2324,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 956009674706004123}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612970994863964165
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2368,7 +2370,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 956009674706004123}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612970994863964167
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2452,7 +2454,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 5624696503662188214}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612971016001159272
       type: {class: BoolAnimatorParameterBinding, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2478,7 +2480,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 5624696503662188214}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612971016001159273
       type: {class: BoolAnimatorParameterBinding, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2504,7 +2506,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 5624696503662188214}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612971016001159274
       type: {class: BoolAnimatorParameterBinding, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2530,7 +2532,7 @@ MonoBehaviour:
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 5624696503662188214}
         coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+        interpolationSettings: {fileID: 0}
     - rid: 6612971016001159275
       type: {class: AnimatorDescriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
@@ -2632,11 +2634,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectArray:
-  - {fileID: 5377922659639053592, guid: 5df1f8a97e35cf4489a4be093fd1f124, type: 3}
-  - {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
-  - {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
+  - {fileID: 8946875335793648866, guid: 9d98c1c2c8ca66341b697cd88abce46b, type: 3}
+  - {fileID: 8925478592474520114, guid: f3e71fd7c178b0741a7f8fa2e92e94cb, type: 3}
+  - {fileID: 2297178890209949971, guid: 665e8f2632a4d3a46a693f897bb7ccae, type: 3}
+  - {fileID: 5451607761990765999, guid: fd4e093c29f40b14ea1af5200044859c, type: 3}
   targetTag: target
-  height: 0.01
+  height: 0.02
   holdDuration: 1
   spawnRadius: 1
   objectCounter: 0
@@ -2675,7 +2678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectArray: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
   targetTag: target
-  height: 1
+  height: 0
   holdDuration: 5
   spawnRadius: 1
 --- !u!114 &-5054251383767793578
@@ -2697,6 +2700,32 @@ MonoBehaviour:
   UseFixedSimulationFrames: 0
   inputName: PlayerTree
   fields: []
+--- !u!114 &6947170389959408659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642824383705400218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa4e2fa2344c45e6a552d2ddc7d4de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+--- !u!114 &1924953303815058310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642824383705400218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb83d0da5a22d49aeb004b2b367607b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovementRef: {fileID: 8298306400517334434}
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0
