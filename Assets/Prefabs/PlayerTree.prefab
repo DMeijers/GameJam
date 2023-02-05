@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: fd438695286d7c94f86a981760f0142f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -133,7 +133,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -221,7 +221,7 @@ Camera:
   m_GameObject: {fileID: 234040764674803437}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -2198,6 +2198,22 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 243786132}
       lodStepsActive: 1
+    - component: {fileID: 6947170389959408659}
+      lodStepsActive: 1
+    - component: {fileID: 1924953303815058310}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
@@ -2676,7 +2692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabf36e8042b5480db9c99debb61c25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectArray: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
+  objectArray: {fileID: 5024321425174902580, guid: 457588b80d22e4245966566d77356d43, type: 3}
   targetTag: target
   height: 0
   holdDuration: 5

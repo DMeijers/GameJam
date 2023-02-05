@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "59d13a4cb8309a74d633a6abebad804c0523e833";
+		public const string schemaId = "41dff6a6dc64776d5ddbdf0f35e676d4817b77c0";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -169,6 +169,8 @@ namespace Coherence.Generated
 		public const uint InternalArchetypeTreeRot3_fd4e093c29f40b14ea1af5200044859c_WorldOrientation_LOD0 = 149;
 		public const uint InternalArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldPosition_LOD0 = 150;
 		public const uint InternalArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldOrientation_LOD0 = 151;
+		public const uint InternalArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldPosition_LOD0 = 152;
+		public const uint InternalArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldOrientation_LOD0 = 153;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
@@ -331,6 +333,8 @@ namespace Coherence.Generated
 			{ 149, "ArchetypeTreeRot3_fd4e093c29f40b14ea1af5200044859c_WorldOrientation_LOD0" },
 			{ 150, "ArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldPosition_LOD0" },
 			{ 151, "ArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldOrientation_LOD0" },
+			{ 152, "Archetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldPosition_LOD0" },
+			{ 153, "Archetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldOrientation_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -656,6 +660,10 @@ namespace Coherence.Generated
 					return WorldPosition.DeserializeArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldOrientation_LOD0:
 					return WorldOrientation.DeserializeArchetypeTrap_ba06265ea0ce0496daed310dbe2a5c20_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypetrap__char_32_1_457588b80d22e4245966566d77356d43_WorldOrientation_LOD0(inProtocolStream);
 				default:
 					return (null, 0, 0);
 			}

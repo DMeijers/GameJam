@@ -17,6 +17,8 @@ private float holdStartTime;
 
 public Image image;
 
+public int objectCounter = 0;
+
 void Update()
 {
     if (Input.GetKey(KeyCode.E))
@@ -53,6 +55,7 @@ void Update()
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform;
                         image.fillAmount -= 0.2f;
+                        objectCounter++;
                         nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
                     Debug.Log("Object spawned on nearest target!");
                 }

@@ -32,6 +32,7 @@ namespace Coherence.Generated
 		public const int TreeRot2_665e8f2632a4d3a46a693f897bb7ccaeIndex = 19;
 		public const int TreeRot3_fd4e093c29f40b14ea1af5200044859cIndex = 20;
 		public const int Trap_ba06265ea0ce0496daed310dbe2a5c20Index = 21;
+		public const int trap__char_32_1_457588b80d22e4245966566d77356d43Index = 22;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
 			{ "HexagonPlanetLast_9d078e07b9399aa4cb032287e7e9a327", 0 },
@@ -77,6 +78,8 @@ namespace Coherence.Generated
 			{ "TreeRot3_fd4e093c29f40b14ea1af5200044859c", 20 },
 
 			{ "Trap_ba06265ea0ce0496daed310dbe2a5c20", 21 },
+
+			{ "trap__char_32_1_457588b80d22e4245966566d77356d43", 22 },
 
 		};
 	}
