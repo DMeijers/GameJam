@@ -1372,6 +1372,7 @@ GameObject:
   - component: {fileID: 5819893876217580149}
   - component: {fileID: 3265500078521850289}
   - component: {fileID: 511042832}
+  - component: {fileID: -8679714882255864280}
   m_Layer: 0
   m_Name: PlayerHuman
   m_TagString: Untagged
@@ -2168,6 +2169,25 @@ MonoBehaviour:
   height: 1
   holdDuration: 5
   spawnRadius: 1
+--- !u!114 &-8679714882255864280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826320148041391961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: PlayerHuman
+  fields: []
 --- !u!1 &4849199821944160738
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "e8dc1357da70b87d0fd19a70ded03fdc1aa0ed07";
+		public const string schemaId = "f8e6c803eb51769abbebc5b6bfd00f5ce4498edf";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -178,6 +178,8 @@ namespace Coherence.Generated
 		public const uint InternalAdoptOrphan = 3;
 		public const uint InternalPersistenceReady = 4;
 		public const uint InternalGenericCommand = 5;
+		public const uint InternalPlayerHuman = 0;
+		public const uint InternalPlayerTree = 1;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -1018,6 +1020,10 @@ namespace Coherence.Generated
 		{
 			switch (inputType)
 			{
+				case Definition.InternalPlayerHuman:
+					return PlayerHuman.Deserialize(bitStream);
+				case Definition.InternalPlayerTree:
+					return PlayerTree.Deserialize(bitStream);
 				default:
 					break;
 			}
@@ -1098,6 +1104,12 @@ namespace Coherence.Generated
 
 			switch (inputType)
 			{
+				case Definition.InternalPlayerHuman:
+					PlayerHuman.Serialize((PlayerHuman)inputData.Input, bitStream);
+					break;
+				case Definition.InternalPlayerTree:
+					PlayerTree.Serialize((PlayerTree)inputData.Input, bitStream);
+					break;
 				default:
 					break;
 			}

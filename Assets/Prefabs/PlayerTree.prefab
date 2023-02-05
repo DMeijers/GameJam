@@ -1833,6 +1833,7 @@ GameObject:
   - component: {fileID: 2269046520460430652}
   - component: {fileID: 5624696503662188214}
   - component: {fileID: 243786132}
+  - component: {fileID: -5054251383767793578}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -2677,6 +2678,25 @@ MonoBehaviour:
   height: 1
   holdDuration: 5
   spawnRadius: 1
+--- !u!114 &-5054251383767793578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642824383705400218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: PlayerTree
+  fields: []
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0
