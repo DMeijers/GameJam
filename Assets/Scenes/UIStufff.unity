@@ -39710,18 +39710,6 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.008833
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.008833
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.008833
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658610592069859315, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -39765,8 +39753,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: HexagonPlanetLast
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 117079997370993406, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
 --- !u!1 &2105157620 stripped
 GameObject:

@@ -146,7 +146,7 @@ MonoBehaviour:
     archetypeName: GreyboxBuilding2_32d6247132758a74088777106e059e9d
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncGreyboxBuilding2_id4, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncGreyboxBuilding2_id2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

@@ -176,7 +176,7 @@ MonoBehaviour:
     archetypeName: Cube_6344a489f82917c4fa01c2adf8b0afd1
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncCube_id14, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncCube_id12, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

@@ -11,8 +11,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PlayerCharacters.unity
     guid: 3edf1339c49d4ea4bb97170291c54347
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UIStufff.unity
     guid: 08c09112d0a67e945ab9e3387fdc9c32
+  - enabled: 1
+    path: Assets/Scenes/FinalStuff.unity
+    guid: 5a799102c93d14f4bb5977d77c21a103
   m_configObjects:
     io.coherence.simulator.build.options: {fileID: 11400000, guid: c8451bd7e714772489b6a6fb2eaafd1f, type: 2}

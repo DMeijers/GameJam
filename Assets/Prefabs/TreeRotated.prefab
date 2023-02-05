@@ -144,7 +144,7 @@ MonoBehaviour:
     archetypeName: TreeRotated_5df1f8a97e35cf4489a4be093fd1f124
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSyncTreeRotated_id19, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncTreeRotated_id17, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

@@ -24,7 +24,7 @@ EditorUserSettings:
       value: 531f05564b0d
       flags: 0
     Coherence.Settings.ActiveSchemas.Hash:
-      value: 5353555f5d56510a555a5b75117759454241482f7e7b7f36297a4e66e0e53069
+      value: 5605555356030c095d0c0d23147b59424f40412c2d7076347e2c4b65bae13569
       flags: 0
     Coherence.Settings.Email:
       value: 025559030c5f0c491e2e042d042e5e191a591626
@@ -61,6 +61,9 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 530957565c045809095e0d744726064443161a73297b75687a2f1930bbe3676a
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5650035f5c0459090e575f264177594414154d737b7f22677a2a4f62e3b1646b
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasGuidIssue: 0
   prefabMappings:
-  - prefab: {fileID: 4826320148041391961, guid: 6d57491473fb68a4a87f6eca2180c0d4, type: 3}
-  - prefab: {fileID: 6642824383705400218, guid: 6e41740ccd468754ebce2e5459d93cdd, type: 3}
   - prefab: {fileID: 5471140216846839113, guid: 9d078e07b9399aa4cb032287e7e9a327, type: 3}
   - prefab: {fileID: 1656871623476923497, guid: 740dc65917c8b324eb303a2698f2dd1a, type: 3}
   - prefab: {fileID: 8004142488105464971, guid: 32d6247132758a74088777106e059e9d, type: 3}
@@ -34,3 +32,6 @@ MonoBehaviour:
   - prefab: {fileID: 2651609620033253931, guid: 3d52409f49bc3ee4fbe52ae04f61f837, type: 3}
   - prefab: {fileID: 5783572454042175480, guid: 5a772a534f3f2634fb628cceb128b128, type: 3}
   - prefab: {fileID: 5377922659639053592, guid: 5df1f8a97e35cf4489a4be093fd1f124, type: 3}
+  - prefab: {fileID: 6642824383705400218, guid: 6e41740ccd468754ebce2e5459d93cdd, type: 3}
+  - prefab: {fileID: 4826320148041391961, guid: 6d57491473fb68a4a87f6eca2180c0d4, type: 3}
+  - prefab: {fileID: 6983598464229619170, guid: fb542973efeb9b8439784d3664e0003a, type: 3}
