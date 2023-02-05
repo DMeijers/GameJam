@@ -1371,6 +1371,7 @@ GameObject:
   - component: {fileID: 4973816531230417904}
   - component: {fileID: 5819893876217580149}
   - component: {fileID: 3265500078521850289}
+  - component: {fileID: 511042832}
   m_Layer: 0
   m_Name: PlayerHuman
   m_TagString: Player
@@ -1683,12 +1684,14 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 2144847745}
       lodStepsActive: 1
+    - component: {fileID: 511042832}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: PlayerHuman_6d57491473fb68a4a87f6eca2180c0d4
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id18, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2143,6 +2146,23 @@ MonoBehaviour:
   holdDuration: 1
   spawnRadius: 1
   image: {fileID: 2144847745}
+--- !u!114 &511042832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826320148041391961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabf36e8042b5480db9c99debb61c25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectArray: {fileID: 8318117322385501001, guid: ba06265ea0ce0496daed310dbe2a5c20, type: 3}
+  targetTag: target
+  height: 1
+  holdDuration: 5
+  spawnRadius: 1
 --- !u!1 &4849199821944160738
 GameObject:
   m_ObjectHideFlags: 0
