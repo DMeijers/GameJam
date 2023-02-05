@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ObjectSpawner : MonoBehaviour
 {
@@ -15,22 +14,14 @@ private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
 
-    private GameObject[] objectsFind; // array of prefabs with tag building
-
-public int objectCounter = 0;
-
-public Image image;
-
 void Update()
 {
-    Debug.Log(objectCounter);
     if (Input.GetKey(KeyCode.E))
     {
         if (holdStartTime == 0)
         {
             holdStartTime = Time.time;
-            AudioManager.Instance.play("spawning_1");
-            }
+        }
         else
         {
             float timeHeld = Time.time - holdStartTime;
@@ -46,36 +37,19 @@ void Update()
                     {
                         distance = currentDistance;
                         nearestTarget = target;
-                        
                     }
                 }
 
                 if (nearestTarget != null && distance <= spawnRadius)
                 {
-                        objectsFind = GameObject.FindGameObjectsWithTag("building");
+                    int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
+                    GameObject objectToSpawn = objectArray[randomIndex];
+                    Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
+                    Quaternion spawnRotation = transform.rotation;
 
-                        foreach (GameObject item in objectsFind)
-                        {
-                            if (nearestTarget == item)
-                            {
-                                Destroy(item);
-                                break;
-                            }
-                        }
-
-                        int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
-                        GameObject objectToSpawn = objectArray[randomIndex];
-                        Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
-                        Quaternion spawnRotation = transform.rotation;
-
-                        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
-                        spawnedObject.transform.parent = nearestTarget.transform;
-                        image.fillAmount -= 0.2f;
-                        objectCounter++;
-                        nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
-                        Debug.Log("Object spawned on nearest target!");
-                    
-                    
+                    GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+                    spawnedObject.transform.parent = nearestTarget.transform;
+                    Debug.Log("Object spawned on nearest target!");
                 }
 
                 holdStartTime = 0;
@@ -86,12 +60,5 @@ void Update()
     {
         holdStartTime = 0;
     }
-}
-private Color HexToColor(string hex)
-{
-    byte r = byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
-    byte g = byte.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
-    byte b = byte.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
-    return new Color32(r, g, b, 255);
 }
 }
