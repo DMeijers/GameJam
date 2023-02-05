@@ -156,7 +156,7 @@ MonoBehaviour:
     archetypeName: Tree2_3d52409f49bc3ee4fbe52ae04f61f837
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSyncTree2_id17, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncTree2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

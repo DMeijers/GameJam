@@ -270,7 +270,7 @@ MonoBehaviour:
     archetypeName: Building1_b4bece24bc468c34587f46fa49fba06f
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding1_id12, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
