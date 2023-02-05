@@ -1833,7 +1833,6 @@ GameObject:
   - component: {fileID: 2269046520460430652}
   - component: {fileID: 5624696503662188214}
   - component: {fileID: 243786132}
-  - component: {fileID: 5323881969635905335}
   m_Layer: 0
   m_Name: PlayerTree
   m_TagString: Player
@@ -2199,16 +2198,16 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id16, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 1
-  coherenceUUID: f426f5c0-1465-43aa-af8e-a432da6e60ff
+  uniquenessType: 0
+  coherenceUUID: 6b732559-7760-474d-b1a6-6e4f9f6bc93c
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -2233,7 +2232,7 @@ MonoBehaviour:
   remoteVersionPrefabName: PlayerTree
   PrefabGuid: 6e41740ccd468754ebce2e5459d93cdd
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions:
   - rid: 6612970994863964168
@@ -2678,19 +2677,6 @@ MonoBehaviour:
   height: 1
   holdDuration: 5
   spawnRadius: 1
---- !u!114 &5323881969635905335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6642824383705400218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoAssignOnSceneInstances: 1
 --- !u!1 &6715172724949765521
 GameObject:
   m_ObjectHideFlags: 0

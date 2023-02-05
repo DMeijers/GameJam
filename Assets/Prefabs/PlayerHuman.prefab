@@ -1372,10 +1372,9 @@ GameObject:
   - component: {fileID: 5819893876217580149}
   - component: {fileID: 3265500078521850289}
   - component: {fileID: 511042832}
-  - component: {fileID: 2142443955557856000}
   m_Layer: 0
   m_Name: PlayerHuman
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1692,14 +1691,14 @@ MonoBehaviour:
     archetypeName: PlayerHuman_6d57491473fb68a4a87f6eca2180c0d4
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id15, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id0, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 1
-  coherenceUUID: 648a4aa5-7fc5-46e1-a7ed-dd7850554d87
+  uniquenessType: 0
+  coherenceUUID: 842aa9ec-af7e-4073-adcf-4cb3dad43dca
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -1724,7 +1723,7 @@ MonoBehaviour:
   remoteVersionPrefabName: PlayerHuman
   PrefabGuid: 6d57491473fb68a4a87f6eca2180c0d4
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions:
   - rid: 6612970994863964168
@@ -2169,19 +2168,6 @@ MonoBehaviour:
   height: 1
   holdDuration: 5
   spawnRadius: 1
---- !u!114 &2142443955557856000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4826320148041391961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoAssignOnSceneInstances: 1
 --- !u!1 &4849199821944160738
 GameObject:
   m_ObjectHideFlags: 0

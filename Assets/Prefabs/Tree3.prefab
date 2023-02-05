@@ -296,7 +296,7 @@ MonoBehaviour:
   remoteVersionPrefabName: Tree3
   PrefabGuid: 5a772a534f3f2634fb628cceb128b128
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions: []
   references:

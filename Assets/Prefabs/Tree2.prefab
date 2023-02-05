@@ -184,7 +184,7 @@ MonoBehaviour:
   remoteVersionPrefabName: Tree2
   PrefabGuid: 3d52409f49bc3ee4fbe52ae04f61f837
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions: []
   references:

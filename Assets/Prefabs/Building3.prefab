@@ -100,7 +100,7 @@ MonoBehaviour:
     archetypeName: Building3_7a150e548341e554686c3ad454e4222c
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding3_id10, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncBuilding3_id12, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -128,7 +128,7 @@ MonoBehaviour:
   remoteVersionPrefabName: Building3
   PrefabGuid: 7a150e548341e554686c3ad454e4222c
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions: []
   references:

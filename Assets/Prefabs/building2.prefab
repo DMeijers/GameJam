@@ -269,7 +269,7 @@ MonoBehaviour:
     archetypeName: building2_055f8f777c9c41a4d90ba8bc1ab22dae
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 4
-  bakedScriptType: Coherence.Generated.CoherenceSyncbuilding2_id9, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncbuilding2_id11, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -297,7 +297,7 @@ MonoBehaviour:
   remoteVersionPrefabName: building2
   PrefabGuid: 055f8f777c9c41a4d90ba8bc1ab22dae
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions: []
   references:
