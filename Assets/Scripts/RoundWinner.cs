@@ -6,39 +6,45 @@ using TMPro;
 
 public class RoundWinner : MonoBehaviour
 {
-    public float timer = 20.0f;
-
-    [SerializeField] ObjectSpawner player1score;
-    [SerializeField] ObjectSpawnerHuman player2score;
-
-    public Text RetreiveText;
-    public Text TimerText;
-
-    void Start()
-    {
+    public int player1Score = 0;
+    public int player2Score = 0;
+    public float timer = 240.0f;
     
-    }
+    public Text resultText;
+   
+
+    
+
+
+
+
+void Start()
+{
+    
+}
+
+
+    
     void DetermineWinner()
      {
+    //these scores are fixed for testing
+    //we need to add a way to retrieve the scores from the played round and assign them to the lines below
+      player1Score = 10;
+      player2Score = 20;
 
+       Time.timeScale = 0;
 
-
-       Time.timeScale = 1.0f;
-
-       if (player1score.objectCounter > player2score.objectCounter)
+       if (player1Score > player2Score)
          {
-        RetreiveText.text = "Player 1 Wins!";
-            Debug.Log("Player 1 wins");
+        resultText.text = "Player 1 Wins!";
       }
-         else if (player1score.objectCounter < player2score.objectCounter)
+         else if (player1Score < player2Score)
          {
-          RetreiveText.text = "Player 2 Wins!";
-            Debug.Log("Player 2 wins");
-        }
+          resultText.text = "Player 2 Wins!";
+      }
         else
        {
-        RetreiveText.text = "It's a Tie!";
-            Debug.Log("It's a Tie");
-        }
-     }
+        resultText.text = "It's a Tie!";
+       }
+       }
 }

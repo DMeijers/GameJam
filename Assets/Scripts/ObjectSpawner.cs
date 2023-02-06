@@ -1,23 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ObjectSpawner : MonoBehaviour
 {
 public GameObject[] objectArray; // array of prefab objects
-public string targetTag = "target";
+public string targetTag = "Target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;
 public float spawnRadius = 1.0f;
+public GameObject[] specificObjects;
 
 private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
 
 public int objectCounter = 0;
-
-public Image image;
 
 void Update()
 {
@@ -27,8 +25,7 @@ void Update()
         if (holdStartTime == 0)
         {
             holdStartTime = Time.time;
-            //AudioManager.Instance.play("spawning_1");
-            }
+        }
         else
         {
             float timeHeld = Time.time - holdStartTime;
@@ -44,37 +41,33 @@ void Update()
                     {
                         distance = currentDistance;
                         nearestTarget = target;
-                        
                     }
                 }
 
                 if (nearestTarget != null && distance <= spawnRadius)
                 {
-                        //objectsFind = GameObject.FindGameObjectsWithTag("building");
+                     foreach (GameObject specificObject in specificObjects)
+                    {
+                        if (nearestTarget == specificObject)
+                        {
+                            Destroy(nearestTarget);
+                            break;
+                        }
+                    }
 
-                        //foreach (GameObject item in objectsFind)
-                        //{
-                        //    if (nearestTarget == item)
-                        //    {
-                        //        Destroy(item);
-                        //        break;
-                        //    }
-                        //}
+                    int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
+                    GameObject objectToSpawn = objectArray[randomIndex];
+                    Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
+                    Quaternion spawnRotation = transform.rotation;
 
-                        int randomIndex = Random.Range(0, objectArray.Length); // choose a random index from the array
-                        GameObject objectToSpawn = objectArray[randomIndex];
-                        Vector3 spawnPosition = nearestTarget.transform.position + new Vector3(0, height, 0);
-                        Quaternion spawnRotation = transform.rotation;
-
-                        GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
-                        spawnedObject.transform.parent = nearestTarget.transform;
-                        image.fillAmount -= 0.2f;
-                        objectCounter++;
-                        nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
-                        Debug.Log("Object spawned on nearest target!");
+                    GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+                    spawnedObject.transform.parent = nearestTarget.transform; 
+                    objectCounter++;
+                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
+                    Debug.Log("Object spawned on nearest target!");
                     
                     
-                }
+                    }
 
                 holdStartTime = 0;
             }

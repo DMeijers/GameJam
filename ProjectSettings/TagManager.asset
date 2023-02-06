@@ -6,9 +6,6 @@ TagManager:
   tags:
   - targetTag
   - target
-  - trap
-  - tree
-  - building
   layers:
   - Default
   - TransparentFX

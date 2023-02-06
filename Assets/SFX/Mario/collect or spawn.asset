@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e256658d6ff7d224abf769dce7ceb4da, type: 3}
-  m_Name: level select
+  m_Name: collect or spawn
   m_EditorClassIdentifier: 
-  Id: level_select
-  Clip: {fileID: 8300000, guid: a278fdf1fd4477442a4f1bd902f65106, type: 3}
+  Id: collect_or_spawn
+  Clip: {fileID: 8300000, guid: ce617a755c4a0674abf05c5c9914bfcf, type: 3}
   Volume: 0.5
   Pitch: 1
   Loop: 0
