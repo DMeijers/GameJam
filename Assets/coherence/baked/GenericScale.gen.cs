@@ -73,6 +73,54 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeCube_6344a489f82917c4fa01c2adf8b0afd1_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypePlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypePlayerHuman_6d57491473fb68a4a87f6eca2180c0d4_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
 
 		/// <summary>
 		/// Resets byte array references to the local array instance that is kept in the lastSentData.

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     private Vector3 moveDir;
     public Animator animator;
+    internal object body;
 
 
     // Start is called before the first frame update
@@ -65,16 +66,9 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
-    //void connect(){
-    //AudioManager.Instance.Play("") // need to add soundtrack before uncomment
-    //}
-
     //void disconnect(){
     //AudioManager.Instance.Stop("") // need to add soundtrack before uncomment
     //}
-
-    //Player needs Playertag pls
 
 
     void FixedUpdate(){

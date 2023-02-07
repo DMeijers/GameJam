@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectSpawnerHuman : MonoBehaviour
 {
    public GameObject[] objectArray; // array of prefab objects
-public string targetTag = "Target";
+public string targetTag = "target";
 public float height = 1.0f;
 public float holdDuration = 3.0f;
 public float spawnRadius = 1.0f;
@@ -13,6 +14,10 @@ public float spawnRadius = 1.0f;
 private GameObject nearestTarget;
 private float distance;
 private float holdStartTime;
+
+public Image image;
+
+public int objectCounter = 0;
 
 void Update()
 {
@@ -49,7 +54,9 @@ void Update()
 
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                     spawnedObject.transform.parent = nearestTarget.transform;
-                    nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
+                        image.fillAmount -= 0.2f;
+                        objectCounter++;
+                        nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
                     Debug.Log("Object spawned on nearest target!");
                 }
 
