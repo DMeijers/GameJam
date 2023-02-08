@@ -1020,7 +1020,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3399055855526421476}
-  - component: {fileID: 8776376159549061534}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -1045,26 +1044,6 @@ Transform:
   m_Father: {fileID: 1409319600099767384}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!95 &8776376159549061534
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2621112464500947294}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 704c27a1c817f3048baeb57f0ff8b9ef, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2796463576567016826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,8 +1562,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 3399055855526421476}
       lodStepsActive: 1
-    - component: {fileID: 8776376159549061534}
-      lodStepsActive: 1
     - component: {fileID: 812520788285067431}
       lodStepsActive: 1
     - component: {fileID: 5360426220032302180}
@@ -1698,7 +1675,7 @@ MonoBehaviour:
     archetypeName: PlayerHuman_6d57491473fb68a4a87f6eca2180c0d4
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id15, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerHuman_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -2125,8 +2102,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4826320148041391961}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c19166f9fed3541488f6261ea074db4f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4cb0cdda575cf2d409bde6b6cc0ba43a, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 704c27a1c817f3048baeb57f0ff8b9ef, type: 3}
+  m_Controller: {fileID: 9100000, guid: 81ccb5a3ef3f88b48947ab872cdfbcec, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

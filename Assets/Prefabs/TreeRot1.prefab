@@ -146,7 +146,7 @@ MonoBehaviour:
     archetypeName: TreeRot1_f3e71fd7c178b0741a7f8fa2e92e94cb
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSyncTreeRot1_id18, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncTreeRot1_id6, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

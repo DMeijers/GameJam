@@ -147,7 +147,7 @@ MonoBehaviour:
     archetypeName: BuildingRot_d7c48c9304a42cb4786538e9ef8284a4
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSyncBuildingRot_id8, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncBuildingRot_id1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

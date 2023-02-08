@@ -1737,7 +1737,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387385224436770876}
-  - component: {fileID: 1028124536506954310}
   m_Layer: 0
   m_Name: TreeMan
   m_TagString: Untagged
@@ -1762,26 +1761,6 @@ Transform:
   m_Father: {fileID: 956009674706004123}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -0.005, y: 0, z: -0.038}
---- !u!95 &1028124536506954310
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6048155807303971462}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c19166f9fed3541488f6261ea074db4f, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6526008174210131959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,8 +2025,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 6387385224436770876}
       lodStepsActive: 1
-    - component: {fileID: 1028124536506954310}
-      lodStepsActive: 1
     - component: {fileID: 2376345812950499535}
       lodStepsActive: 1
     - component: {fileID: 7485736811287581338}
@@ -2202,24 +2179,12 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 1924953303815058310}
       lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: PlayerTree_6e41740ccd468754ebce2e5459d93cdd
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id16, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayerTree_id9, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

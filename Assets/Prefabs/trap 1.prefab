@@ -142,7 +142,7 @@ MonoBehaviour:
     archetypeName: trap__char_32_1_457588b80d22e4245966566d77356d43
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 2
-  bakedScriptType: Coherence.Generated.CoherenceSynctrap__char_32_1_id22, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSynctrap__char_32_1_id21, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

@@ -22460,7 +22460,7 @@ MonoBehaviour:
     archetypeName: PlanetIndividualOrigins_fb542973efeb9b8439784d3664e0003a
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlanetIndividualOrigins_id12,
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlanetIndividualOrigins_id20,
     Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
