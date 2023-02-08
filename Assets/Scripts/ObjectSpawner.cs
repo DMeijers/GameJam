@@ -17,8 +17,11 @@ private float holdStartTime;
 
 public int objectCounter = 0;
 
+
 public Image image;
 
+    
+   
 void Update()
 {
     Debug.Log(objectCounter);
@@ -27,7 +30,7 @@ void Update()
         if (holdStartTime == 0)
         {
             holdStartTime = Time.time;
-            //AudioManager.Instance.play("spawning_1");
+            AudioManager.Instance.play("spawning_1");
             }
         else
         {
@@ -69,12 +72,15 @@ void Update()
                         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
                         spawnedObject.transform.parent = nearestTarget.transform;
                         image.fillAmount -= 0.2f;
-                        objectCounter++;
+                        objectCounter ++;
+                        
+
                         nearestTarget.GetComponent<Renderer>().material.color = HexToColor("102DE7");
                         Debug.Log("Object spawned on nearest target!");
-                    
-                    
-                }
+                        
+
+
+                    }
 
                 holdStartTime = 0;
             }

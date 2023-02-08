@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -641,7 +641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5462102337734659075
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,6 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3399055855526421476}
+  - component: {fileID: 1321617382415082660}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -1044,6 +1045,26 @@ Transform:
   m_Father: {fileID: 1409319600099767384}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!95 &1321617382415082660
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621112464500947294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 704c27a1c817f3048baeb57f0ff8b9ef, type: 3}
+  m_Controller: {fileID: 9100000, guid: 81ccb5a3ef3f88b48947ab872cdfbcec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2796463576567016826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1377,7 @@ GameObject:
   - component: {fileID: 2750141747159200476}
   m_Layer: 0
   m_Name: PlayerHuman
-  m_TagString: Untagged
+  m_TagString: Player 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1455,7 +1476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  animator: {fileID: 5819893876217580149}
+  animator: {fileID: 1321617382415082660}
 --- !u!114 &5281813696622446160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,6 +1690,8 @@ MonoBehaviour:
     - component: {fileID: 5263654850089006758}
       lodStepsActive: 1
     - component: {fileID: 2750141747159200476}
+      lodStepsActive: 1
+    - component: {fileID: 1321617382415082660}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -2101,7 +2124,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4826320148041391961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 704c27a1c817f3048baeb57f0ff8b9ef, type: 3}
   m_Controller: {fileID: 9100000, guid: 81ccb5a3ef3f88b48947ab872cdfbcec, type: 2}
   m_CullingMode: 0

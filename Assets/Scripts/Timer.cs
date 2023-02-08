@@ -6,16 +6,24 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] public TextMeshProUGUI uiText;
-    [SerializeField] private float mainTimer;
+    // [SerializeField] public TextMeshProUGUI uiText;
+    // [SerializeField] private float mainTimer;
 
-    
+    public bool TimerOn = false;
+    public float TimeLeft;
 
-    private float timer;
-    private bool canCount = true;
-    private bool doOnce = false;
+    // private float timer;
+    // private bool canCount = true;
+    // private bool doOnce = false;
 
     public TextMeshProUGUI RetreiveText;
+
+    public Text TimerTxt;
+
+   
+
+    public ObjectSpawner player1;
+    public ObjectSpawnerHuman player2;
 
     public int player1score;
     public int player2score;
@@ -23,41 +31,71 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        timer = mainTimer;
-       
+        // timer = mainTimer;
+
+        TimerOn = true;
+
     }
 
 
     void Update()
     {
-        if (timer >= 0.0f && canCount)
+        if (TimerOn)
         {
-            timer -= Time.deltaTime;
-            uiText.text = timer.ToString("F");
-        }
 
-        else if (timer <= 0.0f && !doOnce)
+        
+        if (TimeLeft > 0 )//&& canCount)
         {
-            canCount = false;
-            doOnce = true;
-            uiText.text = "0.0";
-            timer = 0.0f;
+                TimeLeft -= Time.deltaTime;
+                updateTimer(TimeLeft);
+                // timer -= Time.deltaTime;
+                // uiText.text = timer.ToString("F");
+            }
 
-            DetermineWinner();
+            else  //if (timer <= 0.0f && !doOnce)
+            {
+                // canCount = false;
+                //  doOnce = true;
+                //  uiText.text = "0.0";
+                // timer = 0.0f;
 
-        }
+                DetermineWinner();
+                TimerOn = false;
+                TimeLeft = 0;
+                Debug.Log("Time is UP!!!");
+            }
 
     }
+}
+
+
+    void updateTimer (float currentTime)
+    {
+        currentTime += 1;
+
+        float minutes = Mathf.FloorToInt(currentTime / 60);
+        float seconds = Mathf.FloorToInt(currentTime % 60);
+
+        TimerTxt.text = string.Format("{0:00} : {1:00}", minutes, seconds);
+    }
+
 
     void DetermineWinner()
     {
         //these scores are fixed for testing
         //we need to add a way to retrieve the scores from the played round and assign them to the lines below
+
+
         GameObject player1Object = GameObject.Find("PlayerTree");
         GameObject player2Object = GameObject.Find("PlayerHuman");
 
-        player1score = player1Object.GetComponent<ObjectSpawner>().objectCounter;
-        player2score = player2Object.GetComponent<ObjectSpawnerHuman>().objectCounter;
+
+        player1score = player1.objectCounter;
+        player2score = player2.objectCounter;
+        //player1score = player1Object.GetComponent<ObjectSpawner>().objectCounter;
+        //player2score = player2Object.GetComponent<ObjectSpawnerHuman>().objectCounter;
+
+
 
         if (player1score > player2score)
         {
@@ -74,6 +112,24 @@ public class Timer : MonoBehaviour
             RetreiveText.text = "It's a Tie!";
             Debug.Log("It's a Tie");
         }
+    }
+
+    public void SetPlayer()
+    {
+        if (GameObject.FindGameObjectWithTag("Player 1") != null)
+        {
+
+            player1 = GameObject.FindGameObjectWithTag("Player 1").GetComponent<ObjectSpawner>();
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Player 2") != null)
+        {
+
+            player2 = GameObject.FindGameObjectWithTag("Player 2").GetComponent<ObjectSpawnerHuman>();
+
+        }
+        
     }
 
 }
