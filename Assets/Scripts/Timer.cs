@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class Timer : MonoBehaviour
 
     public Text TimerTxt;
 
-   
+    public GameObject button;
 
     public ObjectSpawner player1;
     public ObjectSpawnerHuman player2;
@@ -44,6 +45,14 @@ public class Timer : MonoBehaviour
     }
 
     
+    public void ResetTheGame()
+    {
+        if (TimerOn == false)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
+        }
+    }
 
 
     void Update()
@@ -70,9 +79,11 @@ public class Timer : MonoBehaviour
                 DetermineWinner();
                 TimerOn = false;
                 TimeLeft = 0;
+                button.GetComponent<ButtonV>().MakeButtonVisible();
                 Debug.Log("Time is UP!!!");
+                
             }
-
+        
     }
 }
 

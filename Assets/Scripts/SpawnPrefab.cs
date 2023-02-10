@@ -8,6 +8,7 @@ public class SpawnPrefab : MonoBehaviour
     public GameObject Player2;
 
     public GameObject timer;
+    public GameObject camera;
     public void SpawnPlayer()
     {
 
@@ -20,8 +21,9 @@ public class SpawnPrefab : MonoBehaviour
 
         else
             Instantiate(Player1);
-
+        AudioManager.Instance.play("start_2");
         timer.GetComponent<Timer>().SetPlayer();
+        camera.GetComponent<DisableCamera>().DisableTheCamera();
         // timer.GetComponent<Timer>().StartTimer();
     }
     void Update()
@@ -31,6 +33,7 @@ public class SpawnPrefab : MonoBehaviour
             timer.GetComponent<Timer>().SetPlayer();
             timer.GetComponent<Timer>().StartTimer();
             Debug.Log("Human Exists");
+            
         }
 
         else Debug.Log("Human Doesn't exist");

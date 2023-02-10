@@ -56,6 +56,7 @@ void Update()
                     spawnedObject.transform.parent = nearestTarget.transform;
                         image.fillAmount -= 0.2f;
                         objectCounter++;
+                        AudioManager.Instance.play("spawning_1");
                         nearestTarget.GetComponent<Renderer>().material.color = HexToColor("E71B39");
                     Debug.Log("Object spawned on nearest target!");
                 }
