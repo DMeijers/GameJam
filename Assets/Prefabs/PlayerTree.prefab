@@ -967,7 +967,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a12cef1443e4e94ba2290fe3c55c393, type: 2}
+  - {fileID: 2100000, guid: 71e2eb4f163d01340ae2c3335d322f4e, type: 2}
   - {fileID: 2100000, guid: 076c71199aa87464990f08a626ca8a10, type: 2}
   - {fileID: -1580535799172915004, guid: c19166f9fed3541488f6261ea074db4f, type: 3}
   - {fileID: 2100000, guid: d00332db2ba2c6b41be63d37ae1fb134, type: 2}
@@ -1737,6 +1737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387385224436770876}
+  - component: {fileID: 2929941906365598906}
   m_Layer: 0
   m_Name: TreeMan
   m_TagString: Untagged
@@ -1761,6 +1762,26 @@ Transform:
   m_Father: {fileID: 956009674706004123}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -0.005, y: 0, z: -0.038}
+--- !u!95 &2929941906365598906
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048155807303971462}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c19166f9fed3541488f6261ea074db4f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4cb0cdda575cf2d409bde6b6cc0ba43a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6526008174210131959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,6 +2199,8 @@ MonoBehaviour:
     - component: {fileID: 6947170389959408659}
       lodStepsActive: 1
     - component: {fileID: 1924953303815058310}
+      lodStepsActive: 1
+    - component: {fileID: 2929941906365598906}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -2680,7 +2703,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6642824383705400218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: c19166f9fed3541488f6261ea074db4f, type: 3}
   m_Controller: {fileID: 9100000, guid: 4cb0cdda575cf2d409bde6b6cc0ba43a, type: 2}
   m_CullingMode: 0
