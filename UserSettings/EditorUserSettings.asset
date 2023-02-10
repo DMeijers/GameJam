@@ -15,7 +15,7 @@ EditorUserSettings:
       value: 15011a52561b59
       flags: 0
     Coherence.CoherenceSyncSchemasDirty:
-      value: 53
+      value: 52
       flags: 0
     Coherence.GatherOnBake:
       value: 52
@@ -24,7 +24,7 @@ EditorUserSettings:
       value: 531f05564b0d
       flags: 0
     Coherence.Settings.ActiveSchemas.Hash:
-      value: 05570404500c51035d595f2615210a1345414e72782e20337c781b66bbb86d69
+      value: 5401550550035f035c0b582444215d4740144a78742d7236742d1b6be7b4653c
       flags: 0
     Coherence.Settings.Email:
       value: 025559030c5f0c491e2e042d042e5e191a591626
@@ -57,10 +57,10 @@ EditorUserSettings:
       value: 5054500054065a020e5a552644265e441415417d7d7f766274781e66b6b3606f
       flags: 0
     RecentlyUsedSceneGuid-7:
-      value: 02090151045008585c0b0d7711775e44144f4f2e7e7822627f7e1931b6b6636e
+      value: 55545057000d5b59540a0d7142735b44134f197b282a25692e2b4a65b1b3323d
       flags: 0
     RecentlyUsedSceneGuid-8:
-      value: 55545057000d5b59540a0d7142735b44134f197b282a25692e2b4a65b1b3323d
+      value: 02090151045008585c0b0d7711775e44144f4f2e7e7822627f7e1931b6b6636e
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 530957565c045809095e0d744726064443161a73297b75687a2f1930bbe3676a

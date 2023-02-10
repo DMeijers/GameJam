@@ -33,9 +33,17 @@ public class Timer : MonoBehaviour
     {
         // timer = mainTimer;
 
+        // TimerOn = true;
+
+    }
+    public void StartTimer()
+    {
+
         TimerOn = true;
 
     }
+
+    
 
 
     void Update()
@@ -86,8 +94,8 @@ public class Timer : MonoBehaviour
         //we need to add a way to retrieve the scores from the played round and assign them to the lines below
 
 
-        GameObject player1Object = GameObject.Find("PlayerTree");
-        GameObject player2Object = GameObject.Find("PlayerHuman");
+        GameObject player1Object = GameObject.FindGameObjectWithTag("Player 1");
+        GameObject player2Object = GameObject.FindGameObjectWithTag("Player 2");
 
 
         player1score = player1.objectCounter;
@@ -131,5 +139,6 @@ public class Timer : MonoBehaviour
         }
         
     }
+    
 
 }
