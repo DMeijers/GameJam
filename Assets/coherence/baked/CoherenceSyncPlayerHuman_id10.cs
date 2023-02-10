@@ -170,6 +170,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_6d57491473fb68a4a87f6eca2180c0d4_5fca88cc_e630_49d4_a626_bfdd6d2dfa99 : IntBinding
+	{
+		private ObjectSpawnerHuman CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (ObjectSpawnerHuman)UnityComponent;
+		}
+		public override string CoherenceComponentName => "PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.objectCounter);
+			set => CastedUnityComponent.objectCounter = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289)coherenceComponent;
+			return update.objectCounter;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289)coherenceComponent;
+			update.objectCounter = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'PlayerHuman' (auto assigned)")]
@@ -236,6 +273,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Animator).GoingBack");
+			}
+			if (coherenceSync.TryGetBindingByGuid("5fca88cc-e630-49d4-a626-bfdd6d2dfa99", "objectCounter", out Binding InternalPlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_objectCounter))
+			{
+				var clone = new Binding_6d57491473fb68a4a87f6eca2180c0d4_5fca88cc_e630_49d4_a626_bfdd6d2dfa99();
+				InternalPlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_objectCounter.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_PlayerHuman_id10_ObjectSpawnerHuman_3265500078521850289_objectCounter)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (ObjectSpawnerHuman).objectCounter");
 			}
 		}
 

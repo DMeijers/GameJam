@@ -22,6 +22,80 @@ namespace Coherence.Generated
 	using Logger = Coherence.Log.Logger;
 	using UnityEngine.Scripting;
 
+	public class Binding_d3b68f2763ee5354ea6e20ba9fe863b6_dcda8949_bc8e_4f04_914a_52b1701d12f8 : StringBinding
+	{
+		private Coherence.Toolkit.CoherenceNode CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Coherence.Toolkit.CoherenceNode)UnityComponent;
+		}
+		public override string CoherenceComponentName => "BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override string Value
+		{
+			get => (string)(System.String)(CastedUnityComponent.path);
+			set => CastedUnityComponent.path = (System.String)(value);
+		}
+
+		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302)coherenceComponent;
+			return update.path;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302)coherenceComponent;
+			update.path = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302();
+		}
+	}
+
+	public class Binding_d3b68f2763ee5354ea6e20ba9fe863b6_a5da8e2a_2775_4c46_99a6_d5d6006aeb51 : IntBinding
+	{
+		private Coherence.Toolkit.CoherenceNode CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Coherence.Toolkit.CoherenceNode)UnityComponent;
+		}
+		public override string CoherenceComponentName => "BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.pathDirtyCounter);
+			set => CastedUnityComponent.pathDirtyCounter = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302)coherenceComponent;
+			return update.pathDirtyCounter;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302)coherenceComponent;
+			update.pathDirtyCounter = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'BuildingRot1' (auto assigned)")]
@@ -42,6 +116,26 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncBuildingRot1_id3>();
+			if (coherenceSync.TryGetBindingByGuid("dcda8949-bc8e-4f04-914a-52b1701d12f8", "path", out Binding InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_path))
+			{
+				var clone = new Binding_d3b68f2763ee5354ea6e20ba9fe863b6_dcda8949_bc8e_4f04_914a_52b1701d12f8();
+				InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_path.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_path)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Coherence.Toolkit.CoherenceNode).path");
+			}
+			if (coherenceSync.TryGetBindingByGuid("a5da8e2a-2775-4c46-99a6-d5d6006aeb51", "pathDirtyCounter", out Binding InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_pathDirtyCounter))
+			{
+				var clone = new Binding_d3b68f2763ee5354ea6e20ba9fe863b6_a5da8e2a_2775_4c46_99a6_d5d6006aeb51();
+				InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_pathDirtyCounter.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalBuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_BuildingRot1_id3_Coherence__char_46_Toolkit__char_46_CoherenceNode_4448892359122093302_pathDirtyCounter)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Coherence.Toolkit.CoherenceNode).pathDirtyCounter");
+			}
 		}
 
 		public override List<ICoherenceComponentData> CreateEntity()

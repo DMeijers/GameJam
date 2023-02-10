@@ -15,7 +15,7 @@ EditorUserSettings:
       value: 15011a52561b59
       flags: 0
     Coherence.CoherenceSyncSchemasDirty:
-      value: 52
+      value: 53
       flags: 0
     Coherence.GatherOnBake:
       value: 52
@@ -60,10 +60,10 @@ EditorUserSettings:
       value: 55545057000d5b59540a0d7142735b44134f197b282a25692e2b4a65b1b3323d
       flags: 0
     RecentlyUsedSceneGuid-8:
-      value: 530957565c045809095e0d744726064443161a73297b75687a2f1930bbe3676a
+      value: 02090151045008585c0b0d7711775e44144f4f2e7e7822627f7e1931b6b6636e
       flags: 0
     RecentlyUsedSceneGuid-9:
-      value: 02090151045008585c0b0d7711775e44144f4f2e7e7822627f7e1931b6b6636e
+      value: 530957565c045809095e0d744726064443161a73297b75687a2f1930bbe3676a
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

@@ -22,6 +22,43 @@ namespace Coherence.Generated
 	using Logger = Coherence.Log.Logger;
 	using UnityEngine.Scripting;
 
+	public class Binding_6e41740ccd468754ebce2e5459d93cdd_87bde029_1cef_4a4f_86b0_856c1b51cf0e : IntBinding
+	{
+		private ObjectSpawner CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (ObjectSpawner)UnityComponent;
+		}
+		public override string CoherenceComponentName => "PlayerTree_id9_ObjectSpawner_2269046520460430652";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.objectCounter);
+			set => CastedUnityComponent.objectCounter = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (PlayerTree_id9_ObjectSpawner_2269046520460430652)coherenceComponent;
+			return update.objectCounter;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (PlayerTree_id9_ObjectSpawner_2269046520460430652)coherenceComponent;
+			update.objectCounter = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new PlayerTree_id9_ObjectSpawner_2269046520460430652();
+		}
+	}
+
 	public class Binding_6e41740ccd468754ebce2e5459d93cdd_03988d14_e364_4e85_80f3_85a566ae74c5 : BoolAnimatorParameterBinding
 	{
 		private UnityEngine.Animator CastedUnityComponent;		
@@ -197,6 +234,16 @@ namespace Coherence.Generated
 			logger = coherenceSync.logger.With<CoherenceSyncPlayerTree_id9>();
 			coherenceInput = coherenceSync.Input;
 			inputBuffer = new InputBuffer<PlayerTree>(coherenceInput.InitialBufferSize, coherenceInput.InitialBufferDelay, coherenceInput.UseFixedSimulationFrames);
+			if (coherenceSync.TryGetBindingByGuid("87bde029-1cef-4a4f-86b0-856c1b51cf0e", "objectCounter", out Binding InternalPlayerTree_id9_ObjectSpawner_2269046520460430652_PlayerTree_id9_ObjectSpawner_2269046520460430652_objectCounter))
+			{
+				var clone = new Binding_6e41740ccd468754ebce2e5459d93cdd_87bde029_1cef_4a4f_86b0_856c1b51cf0e();
+				InternalPlayerTree_id9_ObjectSpawner_2269046520460430652_PlayerTree_id9_ObjectSpawner_2269046520460430652_objectCounter.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayerTree_id9_ObjectSpawner_2269046520460430652_PlayerTree_id9_ObjectSpawner_2269046520460430652_objectCounter)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (ObjectSpawner).objectCounter");
+			}
 			if (coherenceSync.TryGetBindingByGuid("03988d14-e364-4e85-80f3-85a566ae74c5", "IsMoving", out Binding InternalPlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214_PlayerTree_id9_UnityEngine__char_46_Animator_5624696503662188214_IsMoving))
 			{
 				var clone = new Binding_6e41740ccd468754ebce2e5459d93cdd_03988d14_e364_4e85_80f3_85a566ae74c5();

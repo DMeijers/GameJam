@@ -73,6 +73,90 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeBuildingRot_d7c48c9304a42cb4786538e9ef8284a4_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeBuildingRot1_d3b68f2763ee5354ea6e20ba9fe863b6_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeBuildingRot2_e54e3390c037cdb4ea5c1b0191dd93ff_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeTreeRot_9d98c1c2c8ca66341b697cd88abce46b_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeTreeRot1_f3e71fd7c178b0741a7f8fa2e92e94cb_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeTreeRot2_665e8f2632a4d3a46a693f897bb7ccae_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (GenericScale, uint, uint?) DeserializeArchetypeTreeRot3_fd4e093c29f40b14ea1af5200044859c_GenericScale_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new GenericScale();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
 		public static (GenericScale, uint, uint?) DeserializeArchetypePlayerTree_6e41740ccd468754ebce2e5459d93cdd_GenericScale_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;

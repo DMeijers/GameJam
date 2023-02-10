@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2908004904974517233}
   - component: {fileID: 1134828234056759099}
   - component: {fileID: 374586220293176118}
+  - component: {fileID: 118036802855613065}
   m_Layer: 0
   m_Name: BuildingRot2
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494988591886423790}
-  m_LocalRotation: {x: -0.00000003774895, y: -1.11022296e-16, z: 1.11022296e-16, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.789, z: 0}
   m_LocalScale: {x: 6.895663, y: 6.895663, z: 6.895663}
   m_ConstrainProportionsScale: 0
@@ -143,6 +144,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 1134828234056759099}
       lodStepsActive: 1
+    - component: {fileID: 118036802855613065}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: BuildingRot2_e54e3390c037cdb4ea5c1b0191dd93ff
@@ -163,6 +166,9 @@ MonoBehaviour:
   bindings:
   - rid: 6612971027153289270
   - rid: 6612971027153289272
+  - rid: 585526451549765711
+  - rid: 585526451549765721
+  - rid: 585526451549765722
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -183,6 +189,144 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 585526451549765711
+      type: {class: ScaleBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 585526451549765712
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 836aab73-a2ab-4a31-bd89-f01644b71bf7
+        archetypeData:
+          type: 7
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 7
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 2302628692198067284}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 585526451549765712
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: localScale
+        monoAssemblyType: UnityEngine.Vector3, UnityEngine
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 64
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.ScaleBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 585526451549765721
+      type: {class: StringBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 585526451549765723
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 584451c8-91e2-4d59-aa2b-e8d53fae60f3
+        archetypeData:
+          type: 5
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 5
+            bits: 6
+            minRange: 0
+            maxRange: 0
+            precision: 0
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 118036802855613065}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 585526451549765722
+      type: {class: IntBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 585526451549765724
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 54fbbd40-30bf-4424-ae8e-5f153d3cb138
+        archetypeData:
+          type: 1
+          minRange: -2147483648
+          maxRange: 2147483647
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 1
+            bits: 32
+            minRange: -2147483648
+            maxRange: 2147483647
+            precision: 0
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 118036802855613065}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 585526451549765723
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: path
+        monoAssemblyType: System.String, mscorlib
+        required: 1
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 4
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: Coherence.Toolkit.CoherenceNode, Coherence.Toolkit,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.StringBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 585526451549765724
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: pathDirtyCounter
+        monoAssemblyType: System.Int32, mscorlib
+        required: 1
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 4
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: Coherence.Toolkit.CoherenceNode, Coherence.Toolkit,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.IntBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
     - rid: 6612971027153289270
       type: {class: PositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -275,3 +419,17 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+--- !u!114 &118036802855613065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494988591886423790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ac520fda41f43c7b508d780e58180a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: 
+  pathDirtyCounter: 0

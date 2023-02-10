@@ -8,7 +8,7 @@ public class SpawnPrefab : MonoBehaviour
     public GameObject Player2;
 
     public GameObject timer;
-    public GameObject camera;
+    public GameObject cameratohide;
     public void SpawnPlayer()
     {
 
@@ -23,7 +23,7 @@ public class SpawnPrefab : MonoBehaviour
             Instantiate(Player1);
         AudioManager.Instance.play("start_2");
         timer.GetComponent<Timer>().SetPlayer();
-        camera.GetComponent<DisableCamera>().DisableTheCamera();
+        cameratohide.GetComponent<DisableCamera>().DisableTheCamera();
         // timer.GetComponent<Timer>().StartTimer();
     }
     void Update()
