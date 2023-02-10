@@ -12,6 +12,8 @@ public class SpawnPrefab : MonoBehaviour
     public GameObject soundTrackToPlay;
     public GameObject soundTrackToStop;
     public GameObject UItoDisable;
+    
+
     public void SpawnPlayer()
     {
 
@@ -24,12 +26,13 @@ public class SpawnPrefab : MonoBehaviour
 
         else
             Instantiate(Player1);
-        AudioManager.Instance.play("start_2");
+        //AudioManager.Instance.play("start_2");
         timer.GetComponent<Timer>().SetPlayer();
         cameratohide.GetComponent<DisableCamera>().DisableTheCamera();
         soundTrackToPlay.GetComponent<SoundTrack>().PlaySoundTrack();
         soundTrackToStop.GetComponent<DisableTrack>().StopSoundTrack();
-       
+        
+
         // timer.GetComponent<Timer>().StartTimer();
     }
     void Update()

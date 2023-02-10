@@ -10,6 +10,6 @@ public class ButtonV : MonoBehaviour
     {
         gameObject.SetActive(true);
         // AudioManager.Instance.play("end_1");
-        AudioManager.Instance.play("start_3");
+        //AudioManager.Instance.play("start_3");
     }
 }

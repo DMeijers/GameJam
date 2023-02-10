@@ -11525,6 +11525,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6353288932754373645, guid: 2b7fce2e61638b4468b31ea834c25e77, type: 3}
+--- !u!1001 &630166012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1417512293050655472, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655472, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655473, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655475, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_Name
+      value: WinSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417512293050655475, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
 --- !u!1 &631944354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -548570221262154224, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
@@ -37814,6 +37883,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5627058646028685760, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
+--- !u!1 &1878178992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1417512293050655475, guid: b0b692160dca6ad43b7c701578b8e64f, type: 3}
+  m_PrefabInstance: {fileID: 630166012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1878178996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878178992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9483af6b8c94c914bade7e6601ce2d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1879225359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7261791022070050367, guid: c4423d8ac34084c40962f0a8cb629e52, type: 3}
@@ -37945,6 +38031,7 @@ MonoBehaviour:
   RetreiveText: {fileID: 2129230311}
   TimerTxt: {fileID: 1467991115}
   button: {fileID: 1548693571}
+  winSound: {fileID: 1878178992}
   player1: {fileID: 0}
   player2: {fileID: 0}
   player1score: 0

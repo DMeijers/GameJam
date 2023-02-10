@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
     public Text TimerTxt;
 
     public GameObject button;
+    public GameObject winSound;
 
     public ObjectSpawner player1;
     public ObjectSpawnerHuman player2;
@@ -43,13 +44,13 @@ public class Timer : MonoBehaviour
         TimerOn = true;
 
     }
-
+    
     
     public void ResetTheGame()
     {
         if (TimerOn == false)
         {
-            AudioManager.Instance.play("start_3");
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             
         }
@@ -82,7 +83,8 @@ public class Timer : MonoBehaviour
                 TimeLeft = 0;
                 button.GetComponent<ButtonV>().MakeButtonVisible();
                 Debug.Log("Time is UP!!!");
-                
+                winSound.GetComponent<WinSound>().PlayWinSound();
+
             }
         
     }
