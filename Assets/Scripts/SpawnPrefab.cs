@@ -9,6 +9,9 @@ public class SpawnPrefab : MonoBehaviour
 
     public GameObject timer;
     public GameObject cameratohide;
+    public GameObject soundTrackToPlay;
+    public GameObject soundTrackToStop;
+    public GameObject UItoDisable;
     public void SpawnPlayer()
     {
 
@@ -24,19 +27,29 @@ public class SpawnPrefab : MonoBehaviour
         AudioManager.Instance.play("start_2");
         timer.GetComponent<Timer>().SetPlayer();
         cameratohide.GetComponent<DisableCamera>().DisableTheCamera();
+        soundTrackToPlay.GetComponent<SoundTrack>().PlaySoundTrack();
+        soundTrackToStop.GetComponent<DisableTrack>().StopSoundTrack();
+       
         // timer.GetComponent<Timer>().StartTimer();
     }
     void Update()
     {
+        
+        
+        
         if (GameObject.FindGameObjectWithTag("Player 2"))
         {
             timer.GetComponent<Timer>().SetPlayer();
             timer.GetComponent<Timer>().StartTimer();
-            Debug.Log("Human Exists");
-            
+            //Debug.Log("Human Exists");
+            UItoDisable.GetComponent<WaitForPlayer>().UItoDisable();
+
         }
 
-        else Debug.Log("Human Doesn't exist");
+        else
+        {
+            UItoDisable.GetComponent<WaitForPlayer>().UItoEnable();
+        }//Debug.Log("Human Doesn't exist");
     }
 
 }

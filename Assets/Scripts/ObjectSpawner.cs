@@ -24,8 +24,8 @@ public Image image;
    
 void Update()
 {
-    Debug.Log(objectCounter);
-    if (Input.GetKey(KeyCode.E))
+        //Debug.Log(objectCounter);
+        if (Input.GetKey(KeyCode.E))
     {
         if (holdStartTime == 0)
         {

@@ -49,6 +49,7 @@ public class Timer : MonoBehaviour
     {
         if (TimerOn == false)
         {
+            AudioManager.Instance.play("start_3");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             
         }
@@ -119,16 +120,19 @@ public class Timer : MonoBehaviour
         if (player1score > player2score)
         {
             RetreiveText.text = "Player 1 Wins!";
+            
             Debug.Log("Player 1 wins");
         }
         else if (player1score < player2score)
         {
             RetreiveText.text = "Player 2 Wins!";
+            
             Debug.Log("Player 2 wins");
         }
         else
         {
             RetreiveText.text = "It's a Tie!";
+            
             Debug.Log("It's a Tie");
         }
     }
